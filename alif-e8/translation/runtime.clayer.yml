@@ -1,0 +1,30 @@
+layer:
+  type: AI
+  description: OPUS-MT translator on Ethos-U85
+  packs:
+  - pack: PyTorch::ExecuTorch@1.5.1
+  define:
+  - ET_LOG_ENABLED: 1
+  - ET_MIN_LOG_LEVEL: Error
+  add-path:
+  - .
+  components:
+  - component: Machine Learning:ExecuTorch:Runtime
+  - component: Machine Learning:ExecuTorch:Kernel Utils
+  - component: Machine Learning:ExecuTorch:Kernel Registration
+  - component: Machine Learning:ExecuTorch:Backend EthosU
+  - component: Machine Learning:ExecuTorch Operators:Quantized quantize
+  - component: Machine Learning:ExecuTorch Operators:Quantized dequantize
+  - component: Machine Learning:ExecuTorch Operators:Portable addmm
+  - component: Machine Learning:ExecuTorch Operators:Portable permute_copy
+  - component: Machine Learning:ExecuTorch Operators:Portable expand_copy
+  - component: Machine Learning:ExecuTorch Operators:Portable bmm
+  - component: Machine Learning:ExecuTorch Operators:Portable div
+  - component: Machine Learning:ExecuTorch Operators:Portable add
+  - component: Machine Learning:ExecuTorch Operators:Portable softmax
+  - component: Machine Learning:ExecuTorch Operators:Portable clone_dim_order
+  - component: Machine Learning:ExecuTorch Operators:Portable native_layer_norm
+  - component: Machine Learning:ExecuTorch Operators:Portable relu
+  - component: Machine Learning:ExecuTorch Operators:Portable mul
+  - component: Machine Learning:ExecuTorch Operators:Portable sum
+  - component: Machine Learning:ExecuTorch Operators:Portable mm

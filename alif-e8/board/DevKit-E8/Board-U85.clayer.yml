@@ -1,0 +1,136 @@
+# Copyright 2026 Arm Limited and/or its affiliates.
+# SPDX-License-Identifier: Apache-2.0
+#
+# Alif Ensemble E8 DevKit board bring-up for the Ethos-U85 NPU, running on the
+# Cortex-M55 high-performance (HP) core. Derived from the pack's
+# Boards/DevKit-e8/Layers/M55_HP/Board_HP-U85.clayer.yml and trimmed to what an
+# ExecuTorch face generator needs: device startup, the Secure Enclave services
+# (clocks, pin mux), a UART-backed stdout on the PRG USB connector, the Ethos-U
+# driver, and the MIPI-DSI display (CDC200 + ILI9806E panel) that shows the
+# generated images. Camera, Ethernet, USB, VIO and the vStream drivers are
+# omitted.
+layer:
+  type: Board
+  description: DevKit-E8 board setup for Ethos-U85 inference on M55_HP with the LCD
+  for-board: Alif Semiconductor::DevKit-E8
+  for-device: Alif Semiconductor::AE822FA0E5597LS0:M55_HP
+  device: :M55_HP
+
+  processor:
+    trustzone: off
+
+  connections:
+    - connect: DevKit-E8 Board
+      provides:
+        - STDIN
+        - STDOUT
+        - STDERR
+        - Heap: 98304
+
+  define:
+    - CMSIS_target_header: \"DevKit-E8.h\"
+    - ETHOSU85
+    # The connected AP-Vision ribbon identifies an MT9M114-105 camera.
+    # Ensemble 2.2.1's AE822 I2C RTE template omits these driver defaults.
+    - RTE_I2C0_SCL_STUCK_LOW_TIMEOUT: 1000000
+    - RTE_I2C0_SDA_STUCK_LOW_TIMEOUT: 1000000
+    - RTE_I2C1_SCL_STUCK_LOW_TIMEOUT: 1000000
+    - RTE_I2C1_SDA_STUCK_LOW_TIMEOUT: 1000000
+    - RTE_I2C2_SCL_STUCK_LOW_TIMEOUT: 1000000
+    - RTE_I2C2_SDA_STUCK_LOW_TIMEOUT: 1000000
+    - RTE_I2C3_SCL_STUCK_LOW_TIMEOUT: 1000000
+    - RTE_I2C3_SDA_STUCK_LOW_TIMEOUT: 1000000
+    # The runner's memory pools (src/app_main.cpp) do not fit the 1 MB DTCM
+    # that the Alif linker scripts use for .bss. Place them in the bulk SRAM0
+    # (4 MB at 0x02000000, NPU-accessible) via the section named here; the
+    # linker scripts in this layer route the section there, above the A32 boot
+    # stub and next to the 1.15 MB LCD frame buffer. The temp pool holds the
+    # Ethos-U scratch of the decoder.
+    - APP_POOL_SECTION: \".bss.ai_pool\"
+    - APP_METHOD_POOL_SIZE: 0x100000
+    - APP_TEMP_POOL_SIZE: 0x180000
+    # After the boot demo the runner keeps serving pico-faces' serial protocol
+    # on the console, for pico-faces' viewer/view_serial.py (APP_INTERACTIVE),
+    # and generates new faces on the SW2 joystick: left, one image; right,
+    # start or stop back-to-back generation (APP_BUTTONS, buttons.c).
+    - APP_INTERACTIVE
+    - APP_BUTTONS
+    # Every generated image is shown on the LCD (board_display_image(),
+    # display.c).
+    - APP_DISPLAY
+    - APP_MANUAL_ETHOS_INIT
+
+  packs:
+    - pack: AlifSemiconductor::Ensemble@^2.2.0-0
+    - pack: ARM::CMSIS@^6.2.0
+    - pack: ARM::CMSIS-Compiler@^2.1.0
+    - pack: ARM::ethos-u-core-driver@^1.26.2
+
+  misc:
+    - for-compiler: AC6
+      Link:
+        - '--diag_suppress 6312,6314,6329,6848'
+
+  components:
+    - component: Device:Startup
+
+    - component: BSP:Board Config
+    - component: BSP:DevKit Config&DevKit-e8
+    - component: BSP:External peripherals:CAMERA Sensor OV5675
+    - component: CMSIS:CORE
+
+    - component: CMSIS Driver:USART
+    - component: CMSIS Driver:I2C
+
+    - component: CMSIS-Compiler:CORE
+    - component: CMSIS-Compiler:STDERR:Custom
+    - component: CMSIS-Compiler:STDIN:Custom
+    - component: CMSIS-Compiler:STDOUT:Custom
+
+    - component: Device:SOC Peripherals:MHU
+    - component: Device:SOC Peripherals:PINCONF
+
+    # Display: CDC200 controller, 2-lane MIPI DSI + DPHY, the ILI9806E panel of
+    # the DevKit (480 x 800), GPIO for the panel reset and backlight
+    - component: Device:SOC Peripherals:CDC
+    - component: Device:SOC Peripherals:MIPI DSI
+    - component: Device:SOC Peripherals:MIPI DSI CSI2 DPHY
+    - component: Device:SOC Peripherals:GPIO
+    - component: Device:SOC Peripherals:ISP
+    - component: Device:SOC Peripherals:CPI
+    - component: Device:SOC Peripherals:MIPI CSI2
+    - component: BSP:External peripherals:ILI9806E LCD panel
+
+    - component: Machine Learning:NPU Support:Ethos-U Driver&Generic U85
+
+    - component: Services:Retarget IO:STDERR
+    - component: Services:Retarget IO:STDIN
+    - component: Services:Retarget IO:STDOUT
+    - component: Services:Secure Enclave:core&Source
+    - component: Services:Secure Enclave:Initialization Helper&Source
+
+  groups:
+    - group: Board
+      files:
+        - file: ./main.c
+        - file: ./main.h
+        - file: ./DevKit-E8.h
+        - file: ./ethos_setup.c
+        - file: ./retarget_stdio.c
+        - file: ./display.c
+        - file: ./buttons.c
+
+    - group: Ethos Interface
+      files:
+        - file: ./ethosu_cb_dcache.c
+
+  # The pack's linker scripts keep every .bss in DTCM; these copies add the
+  # .bss.ai_pool section in bulk SRAM and a 32 kB main stack.
+  linker:
+    - regions: ./RTE/Device/AE822FA0E5597LS0_M55_HP/app_mem_regions.h
+    - script: ./linker_ac6_mram.sct.src
+      for-compiler: AC6
+    - script: ./linker_gnu_mram.ld.src
+      for-compiler: GCC
+    - script: ./linker_gnu_mram.ld.src
+      for-compiler: CLANG

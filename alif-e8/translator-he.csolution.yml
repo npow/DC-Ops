@@ -1,0 +1,19 @@
+solution:
+  created-for: CMSIS-Toolbox@2.15.0
+  cdefault:
+  compiler: GCC
+  packs:
+  - pack: PyTorch::ExecuTorch@1.5.1
+  - pack: ARM::CMSIS
+  - pack: ARM::CMSIS-Compiler
+  - pack: AlifSemiconductor::Ensemble@^2.2.0-0
+  target-types:
+  - type: DevKit-E8-HE
+    board: Alif Semiconductor::DevKit-E8
+    device: Alif Semiconductor::AE822FA0E5597LS0:M55_HE
+  build-types:
+  - type: Debug
+    debug: on
+    optimize: speed
+  projects:
+  - project: ./translator-he.cproject.yml

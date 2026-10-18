@@ -1,0 +1,27 @@
+layer:
+  type: Board
+  description: E8 M55 HE OCR worker without shared peripheral initialization
+  for-board: Alif Semiconductor::DevKit-E8
+  for-device: Alif Semiconductor::AE822FA0E5597LS0:M55_HE
+  device: :M55_HE
+  processor:
+    trustzone: off
+  define:
+  - ETHOSU55
+  packs:
+  - pack: AlifSemiconductor::Ensemble@^2.2.0-0
+  - pack: ARM::CMSIS
+  - pack: ARM::CMSIS-Compiler
+  - pack: ARM::ethos-u-core-driver@1.26.5
+  components:
+  - component: Device:Startup
+  - component: CMSIS:CORE
+  - component: CMSIS-Compiler:CORE
+  - component: CMSIS-Compiler:STDERR:Custom
+  - component: CMSIS-Compiler:STDIN:Custom
+  - component: CMSIS-Compiler:STDOUT:Custom
+  - component: Machine Learning:NPU Support:Ethos-U Driver&Generic U55
+  linker:
+  - regions: ./RTE/Device/AE822FA0E5597LS0_M55_HE/app_mem_regions.h
+  - script: ./linker_gnu_mram.ld.src
+    for-compiler: GCC

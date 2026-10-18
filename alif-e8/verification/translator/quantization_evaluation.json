@@ -1,0 +1,65 @@
+{
+  "denominator": 8,
+  "exact_matches": 8,
+  "finished": 8,
+  "results": [
+    {
+      "input": "Welcome",
+      "float": "Bienvenidos",
+      "a16w8": "Bienvenidos",
+      "exact_match": true,
+      "finished": true
+    },
+    {
+      "input": "Do not enter",
+      "float": "No entrar",
+      "a16w8": "No entrar",
+      "exact_match": true,
+      "finished": true
+    },
+    {
+      "input": "Please close the door",
+      "float": "Por favor, cierre la puerta",
+      "a16w8": "Por favor, cierre la puerta",
+      "exact_match": true,
+      "finished": true
+    },
+    {
+      "input": "The store is open",
+      "float": "La tienda est\u00e1 abierta",
+      "a16w8": "La tienda est\u00e1 abierta",
+      "exact_match": true,
+      "finished": true
+    },
+    {
+      "input": "Where is the train station?",
+      "float": "\u00bfD\u00f3nde est\u00e1 la estaci\u00f3n de tren?",
+      "a16w8": "\u00bfD\u00f3nde est\u00e1 la estaci\u00f3n de tren?",
+      "exact_match": true,
+      "finished": true
+    },
+    {
+      "input": "Caution hot surface",
+      "float": "Cantidad de temperatura ambiente",
+      "a16w8": "Cantidad de temperatura ambiente",
+      "exact_match": true,
+      "finished": true
+    },
+    {
+      "input": "Press the green button",
+      "float": "Presione el bot\u00f3n verde",
+      "a16w8": "Presione el bot\u00f3n verde",
+      "exact_match": true,
+      "finished": true
+    },
+    {
+      "input": "This machine is out of order",
+      "float": "Esta m\u00e1quina est\u00e1 fuera de servicio",
+      "a16w8": "Esta m\u00e1quina est\u00e1 fuera de servicio",
+      "exact_match": true,
+      "finished": true
+    }
+  ],
+  "samples_sha256": "56de607ea230ba972fcbe02adaf10a01dc8c097db32b4a61cb9d0b5d7e9888e0",
+  "elapsed_seconds": 22.218544006347656
+}

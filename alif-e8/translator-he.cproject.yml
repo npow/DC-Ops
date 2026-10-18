@@ -1,0 +1,26 @@
+project:
+  misc:
+  - CPP:
+    - -std=gnu++17
+    - -Wno-deprecated-declarations
+  - for-compiler: GCC
+    C:
+    - -Wno-psabi
+    CPP:
+    - -Wno-psabi
+  groups:
+  - group: HE OCR worker
+    files:
+    - file: ./translation/multi_npu/he_worker.cpp
+    - file: ./translation/multi_npu/worker_mailbox.cpp
+    - file: ./translation/live/runner.cpp
+  layers:
+  - layer: ./translation/multi_npu/he_board/Board-HE.clayer.yml
+    type: Board
+  - layer: ./translation/multi_npu/he_runtime.clayer.yml
+    type: AI
+  output:
+    type:
+    - elf
+    - hex
+    - map

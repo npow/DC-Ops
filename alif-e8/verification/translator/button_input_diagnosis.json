@@ -1,0 +1,10 @@
+{
+  "finding": "Firmware only polled center pin4, while hardware latched joystick-right pin3 (0x08). No application button events were counted. Level-only sampling could also miss short taps.",
+  "hardware_gpio_raw_intstatus": 8,
+  "hardware_gpio_intstatus": 8,
+  "hardware_gpio_ext_porta": 31,
+  "firmware_button_presses": 0,
+  "capture_state": 0,
+  "running_state_report": "live_status.json",
+  "fix": "Accept all5 joystick inputs; consume hardware press latches with debounce/held-button filtering."
+}

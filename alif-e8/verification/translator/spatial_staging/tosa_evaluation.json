@@ -1,0 +1,435 @@
+{
+  "execution": "Host executable TOSA reference model; no Vela command stream or E8 execution",
+  "checkpoint_revision": "691fd47381a57d0de256a0e0b201bd83d1f48ba0",
+  "checkpoint_manifest_sha256": "5e6a5af98e5c1185a68d243638bcd10a031a03c2b592e5b5d329eb4f15000ec9",
+  "samples_sha256": "56de607ea230ba972fcbe02adaf10a01dc8c097db32b4a61cb9d0b5d7e9888e0",
+  "calibration_denominator": 24,
+  "evaluation_denominator": 8,
+  "calibration_counts": {
+    "encoder_0": 24,
+    "encoder_1": 24,
+    "encoder_2": 24,
+    "encoder_3": 24,
+    "encoder_4": 24,
+    "encoder_5": 24,
+    "decoder_0": 90,
+    "decoder_1": 90,
+    "head_0": 90,
+    "head_1": 90,
+    "head_2": 90,
+    "head_3": 90
+  },
+  "recalibrated": false,
+  "lowered_once": [
+    {
+      "name": "encoder_0",
+      "pt2_sha256": "6cbd27617d3bbefa88f52362b71c2b8d91a28c377bf966e266feb850b7e8037d",
+      "delegates": 1,
+      "lowering_seconds": 8.972930291994999
+    },
+    {
+      "name": "encoder_1",
+      "pt2_sha256": "24c9659c8872abd1f54aaac7ff65f3bf83e38a0fd9dd7a4e3850f7beb532da21",
+      "delegates": 1,
+      "lowering_seconds": 8.77792404199863
+    },
+    {
+      "name": "encoder_2",
+      "pt2_sha256": "b994c1d150cfca6ee906216039778cb926a7638112332c28020f865c90343700",
+      "delegates": 1,
+      "lowering_seconds": 8.886118832997454
+    },
+    {
+      "name": "encoder_3",
+      "pt2_sha256": "613decb5a486a15ebc582d7f0079f259b34997da2689f68d1796826d49509495",
+      "delegates": 1,
+      "lowering_seconds": 8.881741082994267
+    },
+    {
+      "name": "encoder_4",
+      "pt2_sha256": "e04c6b5243635723f720e172d17ebee1966be7069009eeac597dc83d09ac17a2",
+      "delegates": 1,
+      "lowering_seconds": 9.100117083995428
+    },
+    {
+      "name": "encoder_5",
+      "pt2_sha256": "fd69be49ee5926a9e4b1f97e20b9b88a56bec04057f1b62acc0babeb505db03f",
+      "delegates": 1,
+      "lowering_seconds": 8.727134667002247
+    },
+    {
+      "name": "decoder_0",
+      "pt2_sha256": "75e6d8883c6bea2c3d2b48695abcd3684b4d99b786834d13f6cd4a72ec7dacb4",
+      "delegates": 1,
+      "lowering_seconds": 13.803749874998175
+    },
+    {
+      "name": "decoder_1",
+      "pt2_sha256": "192abb79aa94f8d32d63823642b87ca792aad255c2c6a4ae4634ef72e930df56",
+      "delegates": 1,
+      "lowering_seconds": 13.95813704199827
+    },
+    {
+      "name": "head_0",
+      "pt2_sha256": "c74b2ee4611b17b4a6bf7325f1e33bd611558cc9a5445f2ad5e49091313ff162",
+      "delegates": 1,
+      "lowering_seconds": 2.192133707998437
+    },
+    {
+      "name": "head_1",
+      "pt2_sha256": "ceaa5fa6d8b28082270cb38d7eb37637ded03ff4881069020c3590e142b0ebec",
+      "delegates": 1,
+      "lowering_seconds": 2.5087290840019705
+    },
+    {
+      "name": "head_2",
+      "pt2_sha256": "78dc831797eb96e17d139adb78a11cdaa58358fff5da9de5e055b702d640105a",
+      "delegates": 1,
+      "lowering_seconds": 2.148525000004156
+    },
+    {
+      "name": "head_3",
+      "pt2_sha256": "b7ea740ba37c621f6ac02f1069de9041c6c4a1914b374c24c1f4b084a3814302",
+      "delegates": 1,
+      "lowering_seconds": 2.4614382500003558
+    }
+  ],
+  "results": [
+    {
+      "input": "Welcome",
+      "float_text": "Bienvenidos",
+      "quantized_host_text": "Bienvenidos",
+      "tosa_text": "Bienvenidos",
+      "float_tokens": [
+        19307,
+        0
+      ],
+      "quantized_host_tokens": [
+        19307,
+        0
+      ],
+      "tosa_tokens": [
+        19307,
+        0
+      ],
+      "tosa_matches_float_tokens": true,
+      "tosa_matches_quantized_tokens": true,
+      "float_eos": true,
+      "quantized_host_eos": true,
+      "tosa_eos": true,
+      "host_evaluation_seconds": 1.4964639999961946
+    },
+    {
+      "input": "Do not enter",
+      "float_text": "No entrar",
+      "quantized_host_text": "No entrar",
+      "tosa_text": "No entrar",
+      "float_tokens": [
+        150,
+        3772,
+        0
+      ],
+      "quantized_host_tokens": [
+        150,
+        3772,
+        0
+      ],
+      "tosa_tokens": [
+        150,
+        3772,
+        0
+      ],
+      "tosa_matches_float_tokens": true,
+      "tosa_matches_quantized_tokens": true,
+      "float_eos": true,
+      "quantized_host_eos": true,
+      "tosa_eos": true,
+      "host_evaluation_seconds": 1.6038169170060428
+    },
+    {
+      "input": "Please close the door",
+      "float_text": "Por favor, cierre la puerta",
+      "quantized_host_text": "Por favor, cierre la puerta",
+      "tosa_text": "Por favor, cierre la puerta",
+      "float_tokens": [
+        242,
+        1145,
+        2,
+        5082,
+        8,
+        2696,
+        0
+      ],
+      "quantized_host_tokens": [
+        242,
+        1145,
+        2,
+        5082,
+        8,
+        2696,
+        0
+      ],
+      "tosa_tokens": [
+        242,
+        1145,
+        2,
+        5082,
+        8,
+        2696,
+        0
+      ],
+      "tosa_matches_float_tokens": true,
+      "tosa_matches_quantized_tokens": true,
+      "float_eos": true,
+      "quantized_host_eos": true,
+      "tosa_eos": true,
+      "host_evaluation_seconds": 2.9865498750004917
+    },
+    {
+      "input": "The store is open",
+      "float_text": "La tienda est\u00e1 abierta",
+      "quantized_host_text": "La tienda est\u00e1 abierta",
+      "tosa_text": "La tienda est\u00e1 abierta",
+      "float_tokens": [
+        60,
+        3392,
+        103,
+        5250,
+        0
+      ],
+      "quantized_host_tokens": [
+        60,
+        3392,
+        103,
+        5250,
+        0
+      ],
+      "tosa_tokens": [
+        60,
+        3392,
+        103,
+        5250,
+        0
+      ],
+      "tosa_matches_float_tokens": true,
+      "tosa_matches_quantized_tokens": true,
+      "float_eos": true,
+      "quantized_host_eos": true,
+      "tosa_eos": true,
+      "host_evaluation_seconds": 2.375040042003093
+    },
+    {
+      "input": "Where is the train station?",
+      "float_text": "\u00bfD\u00f3nde est\u00e1 la estaci\u00f3n de tren?",
+      "quantized_host_text": "\u00bfD\u00f3nde est\u00e1 la estaci\u00f3n de tren?",
+      "tosa_text": "\u00bfD\u00f3nde est\u00e1 la estaci\u00f3n de tren?",
+      "float_tokens": [
+        107,
+        8761,
+        103,
+        8,
+        3132,
+        3,
+        3644,
+        63,
+        0
+      ],
+      "quantized_host_tokens": [
+        107,
+        8761,
+        103,
+        8,
+        3132,
+        3,
+        3644,
+        63,
+        0
+      ],
+      "tosa_tokens": [
+        107,
+        8761,
+        103,
+        8,
+        3132,
+        3,
+        3644,
+        63,
+        0
+      ],
+      "tosa_matches_float_tokens": true,
+      "tosa_matches_quantized_tokens": true,
+      "float_eos": true,
+      "quantized_host_eos": true,
+      "tosa_eos": true,
+      "host_evaluation_seconds": 3.6916594580034143
+    },
+    {
+      "input": "Caution hot surface",
+      "float_text": "Cantidad de temperatura ambiente",
+      "quantized_host_text": "Cantidad de temperatura ambiente",
+      "tosa_text": "Cantidad de temperatura ambiente",
+      "float_tokens": [
+        22627,
+        3,
+        1821,
+        1573,
+        0
+      ],
+      "quantized_host_tokens": [
+        22627,
+        3,
+        1821,
+        1573,
+        0
+      ],
+      "tosa_tokens": [
+        22627,
+        3,
+        1821,
+        1573,
+        0
+      ],
+      "tosa_matches_float_tokens": true,
+      "tosa_matches_quantized_tokens": true,
+      "float_eos": true,
+      "quantized_host_eos": true,
+      "tosa_eos": true,
+      "host_evaluation_seconds": 2.30037558299955
+    },
+    {
+      "input": "Press the green button",
+      "float_text": "Presione el bot\u00f3n verde",
+      "quantized_host_text": "Presione el bot\u00f3n verde",
+      "tosa_text": "Pulse el bot\u00f3n verde",
+      "float_tokens": [
+        1864,
+        3117,
+        78,
+        14,
+        4543,
+        5416,
+        0
+      ],
+      "quantized_host_tokens": [
+        1864,
+        3117,
+        78,
+        14,
+        4543,
+        5416,
+        0
+      ],
+      "tosa_tokens": [
+        23285,
+        14,
+        4543,
+        5416,
+        0
+      ],
+      "tosa_matches_float_tokens": false,
+      "tosa_matches_quantized_tokens": false,
+      "float_eos": true,
+      "quantized_host_eos": true,
+      "tosa_eos": true,
+      "host_evaluation_seconds": 2.38553470899933
+    },
+    {
+      "input": "This machine is out of order",
+      "float_text": "Esta m\u00e1quina est\u00e1 fuera de servicio",
+      "quantized_host_text": "Esta m\u00e1quina est\u00e1 fuera de servicio",
+      "tosa_text": "Esta m\u00e1quina est\u00e1 fuera de servicio",
+      "float_tokens": [
+        430,
+        3203,
+        103,
+        880,
+        3,
+        547,
+        0
+      ],
+      "quantized_host_tokens": [
+        430,
+        3203,
+        103,
+        880,
+        3,
+        547,
+        0
+      ],
+      "tosa_tokens": [
+        430,
+        3203,
+        103,
+        880,
+        3,
+        547,
+        0
+      ],
+      "tosa_matches_float_tokens": true,
+      "tosa_matches_quantized_tokens": true,
+      "float_eos": true,
+      "quantized_host_eos": true,
+      "tosa_eos": true,
+      "host_evaluation_seconds": 2.9855894159991294
+    }
+  ],
+  "diagnostics": [
+    {
+      "input": "T",
+      "float_text": "T",
+      "quantized_host_text": "T",
+      "tosa_text": "T",
+      "float_tokens": [
+        345,
+        0
+      ],
+      "quantized_host_tokens": [
+        345,
+        0
+      ],
+      "tosa_tokens": [
+        345,
+        0
+      ],
+      "tosa_matches_float_tokens": true,
+      "tosa_matches_quantized_tokens": true,
+      "float_eos": true,
+      "quantized_host_eos": true,
+      "tosa_eos": true,
+      "host_evaluation_seconds": 1.2396421660014312
+    },
+    {
+      "input": "Hello",
+      "float_text": "Hola",
+      "quantized_host_text": "Hola",
+      "tosa_text": "Hola",
+      "float_tokens": [
+        19017,
+        0
+      ],
+      "quantized_host_tokens": [
+        19017,
+        0
+      ],
+      "tosa_tokens": [
+        19017,
+        0
+      ],
+      "tosa_matches_float_tokens": true,
+      "tosa_matches_quantized_tokens": true,
+      "float_eos": true,
+      "quantized_host_eos": true,
+      "tosa_eos": true,
+      "host_evaluation_seconds": 1.249492333001399
+    }
+  ],
+  "elapsed_seconds": 117.7402174999952,
+  "denominator": 8,
+  "float_token_matches": 7,
+  "quantized_token_matches": 7,
+  "eos_finished": 8,
+  "diagnostic_denominator": 2,
+  "diagnostic_float_token_matches": 2,
+  "diagnostic_quantized_token_matches": 2,
+  "diagnostic_eos_finished": 2
+}

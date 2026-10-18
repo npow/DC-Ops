@@ -1,0 +1,15 @@
+layer:
+  type: AI
+  description: OCR recognizer on HE Ethos U55
+  packs:
+  - pack: PyTorch::ExecuTorch@1.5.1
+  define:
+  - ET_LOG_ENABLED: 1
+  - ET_MIN_LOG_LEVEL: Error
+  components:
+  - component: Machine Learning:ExecuTorch:Runtime
+  - component: Machine Learning:ExecuTorch:Kernel Utils
+  - component: Machine Learning:ExecuTorch:Kernel Registration
+  - component: Machine Learning:ExecuTorch:Backend EthosU
+  - component: Machine Learning:ExecuTorch Operators:Quantized quantize
+  - component: Machine Learning:ExecuTorch Operators:Quantized dequantize

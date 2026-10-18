@@ -1,0 +1,23 @@
+{
+  "physical_button_confirmed_by_user": true,
+  "captured_image": "button_user_camera.png",
+  "captured_state": "button_user_status.json",
+  "recognized_english": "STOP",
+  "translated_spanish": "ESTNDAR",
+  "ocr_correct_for_this_single_input": true,
+  "translation_quality": "Incorrect Spanish, matches pretrained baseline for uppercase STOP. No claim of general OCR or translation accuracy.",
+  "detector_ms": 53,
+  "recognizer_ms": 282,
+  "translator_ms": 1920,
+  "detected_regions": 0,
+  "recognition_used_center_fallback": true,
+  "crop_source_xywh": [
+    91,
+    90,
+    137,
+    60
+  ],
+  "hardware_errors": 0,
+  "later_lcd_image": "button_user_lcd.png",
+  "later_lcd_note": "A subsequent user capture, not the STOP recognition evidence above."
+}

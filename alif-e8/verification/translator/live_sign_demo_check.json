@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "firmware_sha256": "2f2a4d50e71a4265aa24bc8ddf72dd08d82742dcde0c12c55f8c4baae859962f",
+  "before": {
+    "live_frames": 1188,
+    "ocr_runs": 51,
+    "live_error": 0,
+    "ocr_error": 0,
+    "translator_lcd_timeouts": 0,
+    "translator_lcd_errors": 0,
+    "live_display_paused": 0,
+    "live_display_pause_count": 0,
+    "ocr_single_shot_enabled": 0,
+    "ocr_sign_mode": 1,
+    "live_show_ocr_regions": 1,
+    "tr_text_tokens": 0
+  },
+  "after": {
+    "live_frames": 1225,
+    "ocr_runs": 55,
+    "live_error": 0,
+    "ocr_error": 0,
+    "translator_lcd_timeouts": 0,
+    "translator_lcd_errors": 0,
+    "live_display_paused": 0,
+    "live_display_pause_count": 0,
+    "ocr_single_shot_enabled": 0,
+    "ocr_sign_mode": 1,
+    "live_show_ocr_regions": 1,
+    "tr_text_tokens": 0
+  },
+  "observation_seconds": 2,
+  "overlay": "White text with1-pixel blackoutline; noopaque background. Greenbounds onlywhen actualdetectorcount>0; centerfallbackneveroutlined.",
+  "host_render_checks": "Sanitizerspass; twointeriorcrop pixels remain equaltooriginalcamera pixels aftertextoverlay."
+}

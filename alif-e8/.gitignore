@@ -1,0 +1,12 @@
+artifacts/
+out/
+tmp/
+.venv/
+*.cbuild*.yml
+ai_layer/model_pte.c
+ai_layer/model_pte.h
+/ai_layer/ai_layer/
+/RTE/
+*.base@*
+*.update@*
+.cmsis/*.dbgconf*

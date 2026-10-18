@@ -1,0 +1,34 @@
+project:
+  packs:
+  - pack: PyTorch::ExecuTorch@1.5.1
+  - pack: ARM::CMSIS
+  misc:
+  - CPP:
+    - -std=gnu++17
+    - -Wno-deprecated-declarations
+  - for-compiler: GCC
+    C:
+    - -Wno-psabi
+    CPP:
+    - -Wno-psabi
+    Link:
+    - -Wl,-u,_printf_float
+  groups:
+  - group: Translator
+    files:
+    - file: ./src/trace.c
+    - file: ./translation/hardware.cpp
+  layers:
+  - layer: $Board-Layer$
+    type: Board
+  - layer: $AI-Layer$
+    type: AI
+  output:
+    type:
+    - elf
+    - hex
+    - map
+  components:
+  - component: Device:SOC Peripherals:OSPI
+  - component: BSP:OSPI PSRAM XIP
+  - component: BSP:OSPI PSRAM XIP:APS PSRAM

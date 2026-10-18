@@ -4,6 +4,8 @@
 
 Real-time camera-based tool for data center technicians. Point your phone at server racks to detect components — compute trays, network ports, LEDs, cables, fans, drive bays, and more — with on-device AI. Runs **live on the Samsung Galaxy S25 Ultra**, fully offline, with detection selectable between the CPU and the Snapdragon **Hexagon NPU**.
 
+The [Alif E8 port](alif-e8/README.md) also includes a [live English→Spanish sign demo](alif-e8/translation/live/README.md): camera OCR on two Ethos-U55 NPUs, transparent Spanish overlays for 60 common signs, and an experimental ExecuTorch/U85 neural translator.
+
 ## The Problem
 
 Over **1,000 server racks are built every week**, assembled at volume by labor crews cross-referencing paper guides. Roughly **80% are installed incorrectly the first time** — cables in the wrong ports, components misidentified. DC-Ops turns any Snapdragon phone into a real-time inspection and assembly-guidance tool.

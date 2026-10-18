@@ -1,0 +1,95 @@
+{
+  "checkpoint_revision": "691fd47381a57d0de256a0e0b201bd83d1f48ba0",
+  "samples_sha256": "56de607ea230ba972fcbe02adaf10a01dc8c097db32b4a61cb9d0b5d7e9888e0",
+  "pipeline": {
+    "bytes": 17056896,
+    "sha256": "86403c028c4f4c44a852798f39b2653f423469f0436a8679a6d7d611e702f467",
+    "stages": 12
+  },
+  "memory_maxima": {
+    "pte_bytes": 2047504,
+    "scratch_bytes": 32832,
+    "fast_scratch_bytes": 147456
+  },
+  "max_planned_bytes": 82048,
+  "physical_translation_evaluation": "live_translation_evaluation/20261017-180138/result.json",
+  "frozen_phrases": {
+    "denominator": 8,
+    "completed": 8,
+    "float_token_matches": 7,
+    "eos_finished": 8,
+    "successful": 8,
+    "tosa_reference_denominator": 8,
+    "tosa_reference_matches": 8
+  },
+  "diagnostics": {
+    "denominator": 3,
+    "completed": 3,
+    "float_token_matches": 3,
+    "eos_finished": 3,
+    "successful": 3,
+    "tosa_reference_denominator": 2,
+    "tosa_reference_matches": 2
+  },
+  "display_policy_ab": {
+    "T": {
+      "live_ms": 3392,
+      "frozen_ms": 759,
+      "ratio": 4.469038208168643
+    },
+    "Hello": {
+      "live_ms": 3488,
+      "frozen_ms": 759,
+      "ratio": 4.595520421607378
+    },
+    "STOP": {
+      "live_ms": 8507,
+      "frozen_ms": 1914,
+      "ratio": 4.4446185997910135
+    }
+  },
+  "display_policy_firmware_sha256": "bcc2a544ed537c824c30bd535fbe7effe59330d5c4b29e4d2177649f2d6a2eaf",
+  "encoder_layer_benchmark": "translation_layer_benchmark/20261017-175825/result.json",
+  "encoder_layer_benchmark_firmware_sha256": "cb27fcbab358258b5b78ff396bfda2a28121f5d780e27b7e330a99ca413f52b4",
+  "encoder_compute_ms": {
+    "cpu": 24970.9764225,
+    "npu": 80.0856175
+  },
+  "encoder_compute_speedup": 311.8035073213989,
+  "encoder_including_setup_ms": {
+    "cpu": 25019.9764225,
+    "npu": 651.0856175
+  },
+  "encoder_including_setup_speedup": 38.428089563044296,
+  "quality_limits": [
+    "Tiny checkpoint has weak translation quality, including uppercase STOP\u2192ESTNDAR in both baseline and device.",
+    "One frozen phrase differs in wording after integer lowering: Pulse versus Presione; all8 device token sequences match executable TOSA.",
+    "Button capture currently reads one selected region; multi-line reading order is unsupported."
+  ],
+  "hardware_requirements_remaining": [],
+  "latest_manual_translation_evaluation": "live_translation_evaluation/20261017-180931/result.json",
+  "button_capture_check": "button_capture_check.json",
+  "current_firmware_sha256": "2f2a4d50e71a4265aa24bc8ddf72dd08d82742dcde0c12c55f8c4baae859962f",
+  "current_interaction": "Automatic live sign OCR and transparentSpanishoverlay; no capturepressrequired.",
+  "remaining_user_validation": [],
+  "button_user_validation": "button_user_validation.json",
+  "completion_audit": {
+    "pack_and_all_12_stage_hashes_verified": true,
+    "all_12_stages_one_u85_delegate_and_only_cpu_boundary_quantization": true,
+    "all_stages_fit_requested_memory_budgets": true,
+    "frozen_sample_hash_consistent": true,
+    "asset_cpu_crc_all_blocks_verified": true,
+    "verified_asset_blocks": 151084,
+    "current_user_capture_success": true
+  },
+  "fast_sign_demo": {
+    "sign_count": 60,
+    "lookup_validation": "common_signs_validation.json",
+    "capture_test": "button_capture_check.json",
+    "empty_capture_elapsed_ms": 487,
+    "real_sign_user_validation": "pending",
+    "scope": "Common signs/short labels, not arbitrary sentence translation.",
+    "live_check": "live_sign_demo_check.json",
+    "overlay": "Transparenttext withblackglyphoutline; onlyactualdetectedregionsgetgreenboxes, noyellowfallbackbox."
+  }
+}

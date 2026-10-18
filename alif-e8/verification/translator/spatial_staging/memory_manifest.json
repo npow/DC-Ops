@@ -1,0 +1,208 @@
+{
+  "encoder_0": {
+    "pte_bytes": 1046848,
+    "sha256": "630e63542a1b916e2df842f8f85b64a3104a58f0c1a9e40935247a5f28b0f6ce",
+    "planned_buffers": [
+      0,
+      65536
+    ],
+    "delegates": 1,
+    "cpu_ops": [
+      "<EdgeOpOverload: quantized_decomposed.quantize_per_tensor.default>: schema = quantized_decomposed::quantize_per_tensor(Tensor input, float scale, int zero_point, int quant_min, int quant_max, ScalarType dtype) -> Tensor",
+      "<EdgeOpOverload: quantized_decomposed.quantize_per_tensor.default>: schema = quantized_decomposed::quantize_per_tensor(Tensor input, float scale, int zero_point, int quant_min, int quant_max, ScalarType dtype) -> Tensor",
+      "<EdgeOpOverload: quantized_decomposed.dequantize_per_tensor.default>: schema = quantized_decomposed::dequantize_per_tensor(Tensor input, float scale, int zero_point, int quant_min, int quant_max, ScalarType dtype, *, ScalarType? out_dtype=None) -> Tensor"
+    ],
+    "scratch_bytes": 16448,
+    "fast_scratch_bytes": 131072,
+    "fits_requested_budgets": true
+  },
+  "encoder_1": {
+    "pte_bytes": 1042512,
+    "sha256": "13b399dc4a7efcfb322063fc0cc5b5706af763cb0077823bffd37443734c9cb9",
+    "planned_buffers": [
+      0,
+      65536
+    ],
+    "delegates": 1,
+    "cpu_ops": [
+      "<EdgeOpOverload: quantized_decomposed.quantize_per_tensor.default>: schema = quantized_decomposed::quantize_per_tensor(Tensor input, float scale, int zero_point, int quant_min, int quant_max, ScalarType dtype) -> Tensor",
+      "<EdgeOpOverload: quantized_decomposed.quantize_per_tensor.default>: schema = quantized_decomposed::quantize_per_tensor(Tensor input, float scale, int zero_point, int quant_min, int quant_max, ScalarType dtype) -> Tensor",
+      "<EdgeOpOverload: quantized_decomposed.dequantize_per_tensor.default>: schema = quantized_decomposed::dequantize_per_tensor(Tensor input, float scale, int zero_point, int quant_min, int quant_max, ScalarType dtype, *, ScalarType? out_dtype=None) -> Tensor"
+    ],
+    "scratch_bytes": 16448,
+    "fast_scratch_bytes": 147456,
+    "fits_requested_budgets": true
+  },
+  "encoder_2": {
+    "pte_bytes": 1051456,
+    "sha256": "9cf0ffe4519f67deba5cd7a6c47cf5bdacce7d9362791f5dea7a57ce3b086b47",
+    "planned_buffers": [
+      0,
+      65536
+    ],
+    "delegates": 1,
+    "cpu_ops": [
+      "<EdgeOpOverload: quantized_decomposed.quantize_per_tensor.default>: schema = quantized_decomposed::quantize_per_tensor(Tensor input, float scale, int zero_point, int quant_min, int quant_max, ScalarType dtype) -> Tensor",
+      "<EdgeOpOverload: quantized_decomposed.quantize_per_tensor.default>: schema = quantized_decomposed::quantize_per_tensor(Tensor input, float scale, int zero_point, int quant_min, int quant_max, ScalarType dtype) -> Tensor",
+      "<EdgeOpOverload: quantized_decomposed.dequantize_per_tensor.default>: schema = quantized_decomposed::dequantize_per_tensor(Tensor input, float scale, int zero_point, int quant_min, int quant_max, ScalarType dtype, *, ScalarType? out_dtype=None) -> Tensor"
+    ],
+    "scratch_bytes": 16448,
+    "fast_scratch_bytes": 131072,
+    "fits_requested_budgets": true
+  },
+  "encoder_3": {
+    "pte_bytes": 1037984,
+    "sha256": "a936c4b4e5d2650248b4ebb7215c4559dab440f2de19458d7860a936ddf475ad",
+    "planned_buffers": [
+      0,
+      65536
+    ],
+    "delegates": 1,
+    "cpu_ops": [
+      "<EdgeOpOverload: quantized_decomposed.quantize_per_tensor.default>: schema = quantized_decomposed::quantize_per_tensor(Tensor input, float scale, int zero_point, int quant_min, int quant_max, ScalarType dtype) -> Tensor",
+      "<EdgeOpOverload: quantized_decomposed.quantize_per_tensor.default>: schema = quantized_decomposed::quantize_per_tensor(Tensor input, float scale, int zero_point, int quant_min, int quant_max, ScalarType dtype) -> Tensor",
+      "<EdgeOpOverload: quantized_decomposed.dequantize_per_tensor.default>: schema = quantized_decomposed::dequantize_per_tensor(Tensor input, float scale, int zero_point, int quant_min, int quant_max, ScalarType dtype, *, ScalarType? out_dtype=None) -> Tensor"
+    ],
+    "scratch_bytes": 16448,
+    "fast_scratch_bytes": 147456,
+    "fits_requested_budgets": true
+  },
+  "encoder_4": {
+    "pte_bytes": 1040896,
+    "sha256": "7b8199945c42af3155f6589e80ee59a760f9db7488ccc2195a5db322060d6bae",
+    "planned_buffers": [
+      0,
+      65536
+    ],
+    "delegates": 1,
+    "cpu_ops": [
+      "<EdgeOpOverload: quantized_decomposed.quantize_per_tensor.default>: schema = quantized_decomposed::quantize_per_tensor(Tensor input, float scale, int zero_point, int quant_min, int quant_max, ScalarType dtype) -> Tensor",
+      "<EdgeOpOverload: quantized_decomposed.quantize_per_tensor.default>: schema = quantized_decomposed::quantize_per_tensor(Tensor input, float scale, int zero_point, int quant_min, int quant_max, ScalarType dtype) -> Tensor",
+      "<EdgeOpOverload: quantized_decomposed.dequantize_per_tensor.default>: schema = quantized_decomposed::dequantize_per_tensor(Tensor input, float scale, int zero_point, int quant_min, int quant_max, ScalarType dtype, *, ScalarType? out_dtype=None) -> Tensor"
+    ],
+    "scratch_bytes": 16448,
+    "fast_scratch_bytes": 131072,
+    "fits_requested_budgets": true
+  },
+  "encoder_5": {
+    "pte_bytes": 1039760,
+    "sha256": "c2c47dccbe83c479b7bcaa779c038adef1daa9f8f5ca805500ca1e81a8846fde",
+    "planned_buffers": [
+      0,
+      65536
+    ],
+    "delegates": 1,
+    "cpu_ops": [
+      "<EdgeOpOverload: quantized_decomposed.quantize_per_tensor.default>: schema = quantized_decomposed::quantize_per_tensor(Tensor input, float scale, int zero_point, int quant_min, int quant_max, ScalarType dtype) -> Tensor",
+      "<EdgeOpOverload: quantized_decomposed.quantize_per_tensor.default>: schema = quantized_decomposed::quantize_per_tensor(Tensor input, float scale, int zero_point, int quant_min, int quant_max, ScalarType dtype) -> Tensor",
+      "<EdgeOpOverload: quantized_decomposed.dequantize_per_tensor.default>: schema = quantized_decomposed::dequantize_per_tensor(Tensor input, float scale, int zero_point, int quant_min, int quant_max, ScalarType dtype, *, ScalarType? out_dtype=None) -> Tensor"
+    ],
+    "scratch_bytes": 16448,
+    "fast_scratch_bytes": 131072,
+    "fits_requested_budgets": true
+  },
+  "decoder_0": {
+    "pte_bytes": 1323664,
+    "sha256": "e7f9ba0a8490c9a7cc1202256fc5b90f1490f8e732e737c5a5c90dc23a86fdc8",
+    "planned_buffers": [
+      0,
+      82048
+    ],
+    "delegates": 1,
+    "cpu_ops": [
+      "<EdgeOpOverload: quantized_decomposed.quantize_per_tensor.default>: schema = quantized_decomposed::quantize_per_tensor(Tensor input, float scale, int zero_point, int quant_min, int quant_max, ScalarType dtype) -> Tensor",
+      "<EdgeOpOverload: quantized_decomposed.quantize_per_tensor.default>: schema = quantized_decomposed::quantize_per_tensor(Tensor input, float scale, int zero_point, int quant_min, int quant_max, ScalarType dtype) -> Tensor",
+      "<EdgeOpOverload: quantized_decomposed.quantize_per_tensor.default>: schema = quantized_decomposed::quantize_per_tensor(Tensor input, float scale, int zero_point, int quant_min, int quant_max, ScalarType dtype) -> Tensor",
+      "<EdgeOpOverload: quantized_decomposed.dequantize_per_tensor.default>: schema = quantized_decomposed::dequantize_per_tensor(Tensor input, float scale, int zero_point, int quant_min, int quant_max, ScalarType dtype, *, ScalarType? out_dtype=None) -> Tensor"
+    ],
+    "scratch_bytes": 32832,
+    "fast_scratch_bytes": 131072,
+    "fits_requested_budgets": true
+  },
+  "decoder_1": {
+    "pte_bytes": 1323872,
+    "sha256": "5625a684108474e82d9f00958d5d391afb2c4df5a5f01130d03b16736c3b59b4",
+    "planned_buffers": [
+      0,
+      82048
+    ],
+    "delegates": 1,
+    "cpu_ops": [
+      "<EdgeOpOverload: quantized_decomposed.quantize_per_tensor.default>: schema = quantized_decomposed::quantize_per_tensor(Tensor input, float scale, int zero_point, int quant_min, int quant_max, ScalarType dtype) -> Tensor",
+      "<EdgeOpOverload: quantized_decomposed.quantize_per_tensor.default>: schema = quantized_decomposed::quantize_per_tensor(Tensor input, float scale, int zero_point, int quant_min, int quant_max, ScalarType dtype) -> Tensor",
+      "<EdgeOpOverload: quantized_decomposed.quantize_per_tensor.default>: schema = quantized_decomposed::quantize_per_tensor(Tensor input, float scale, int zero_point, int quant_min, int quant_max, ScalarType dtype) -> Tensor",
+      "<EdgeOpOverload: quantized_decomposed.dequantize_per_tensor.default>: schema = quantized_decomposed::dequantize_per_tensor(Tensor input, float scale, int zero_point, int quant_min, int quant_max, ScalarType dtype, *, ScalarType? out_dtype=None) -> Tensor"
+    ],
+    "scratch_bytes": 32832,
+    "fast_scratch_bytes": 131072,
+    "fits_requested_budgets": true
+  },
+  "head_0": {
+    "pte_bytes": 2035232,
+    "sha256": "d4ca741213dd5b0ea715290682143590af49a0cf175ecd6a608e5abf169ffd6f",
+    "planned_buffers": [
+      0,
+      65152
+    ],
+    "delegates": 1,
+    "cpu_ops": [
+      "<EdgeOpOverload: quantized_decomposed.quantize_per_tensor.default>: schema = quantized_decomposed::quantize_per_tensor(Tensor input, float scale, int zero_point, int quant_min, int quant_max, ScalarType dtype) -> Tensor",
+      "<EdgeOpOverload: quantized_decomposed.quantize_per_tensor.default>: schema = quantized_decomposed::quantize_per_tensor(Tensor input, float scale, int zero_point, int quant_min, int quant_max, ScalarType dtype) -> Tensor",
+      "<EdgeOpOverload: quantized_decomposed.dequantize_per_tensor.default>: schema = quantized_decomposed::dequantize_per_tensor(Tensor input, float scale, int zero_point, int quant_min, int quant_max, ScalarType dtype, *, ScalarType? out_dtype=None) -> Tensor"
+    ],
+    "scratch_bytes": 16448,
+    "fast_scratch_bytes": 16896,
+    "fits_requested_budgets": true
+  },
+  "head_1": {
+    "pte_bytes": 2032352,
+    "sha256": "9ee2fa22145cdc6eace0c4ff9e2b9d8e94a2d459ae404d0c14cccc7dcb6e7270",
+    "planned_buffers": [
+      0,
+      65152
+    ],
+    "delegates": 1,
+    "cpu_ops": [
+      "<EdgeOpOverload: quantized_decomposed.quantize_per_tensor.default>: schema = quantized_decomposed::quantize_per_tensor(Tensor input, float scale, int zero_point, int quant_min, int quant_max, ScalarType dtype) -> Tensor",
+      "<EdgeOpOverload: quantized_decomposed.quantize_per_tensor.default>: schema = quantized_decomposed::quantize_per_tensor(Tensor input, float scale, int zero_point, int quant_min, int quant_max, ScalarType dtype) -> Tensor",
+      "<EdgeOpOverload: quantized_decomposed.dequantize_per_tensor.default>: schema = quantized_decomposed::dequantize_per_tensor(Tensor input, float scale, int zero_point, int quant_min, int quant_max, ScalarType dtype, *, ScalarType? out_dtype=None) -> Tensor"
+    ],
+    "scratch_bytes": 16448,
+    "fast_scratch_bytes": 16896,
+    "fits_requested_budgets": true
+  },
+  "head_2": {
+    "pte_bytes": 2034736,
+    "sha256": "510a2edeb147ec46f25db20d5e459152b47de28981cc0ec62a6d5c581f12a544",
+    "planned_buffers": [
+      0,
+      65152
+    ],
+    "delegates": 1,
+    "cpu_ops": [
+      "<EdgeOpOverload: quantized_decomposed.quantize_per_tensor.default>: schema = quantized_decomposed::quantize_per_tensor(Tensor input, float scale, int zero_point, int quant_min, int quant_max, ScalarType dtype) -> Tensor",
+      "<EdgeOpOverload: quantized_decomposed.quantize_per_tensor.default>: schema = quantized_decomposed::quantize_per_tensor(Tensor input, float scale, int zero_point, int quant_min, int quant_max, ScalarType dtype) -> Tensor",
+      "<EdgeOpOverload: quantized_decomposed.dequantize_per_tensor.default>: schema = quantized_decomposed::dequantize_per_tensor(Tensor input, float scale, int zero_point, int quant_min, int quant_max, ScalarType dtype, *, ScalarType? out_dtype=None) -> Tensor"
+    ],
+    "scratch_bytes": 16448,
+    "fast_scratch_bytes": 16896,
+    "fits_requested_budgets": true
+  },
+  "head_3": {
+    "pte_bytes": 2047504,
+    "sha256": "e73d26a1805282a14f81b37c08c2bde1200279f5e2e10902d7e3ed29af5476d3",
+    "planned_buffers": [
+      0,
+      65168
+    ],
+    "delegates": 1,
+    "cpu_ops": [
+      "<EdgeOpOverload: quantized_decomposed.quantize_per_tensor.default>: schema = quantized_decomposed::quantize_per_tensor(Tensor input, float scale, int zero_point, int quant_min, int quant_max, ScalarType dtype) -> Tensor",
+      "<EdgeOpOverload: quantized_decomposed.quantize_per_tensor.default>: schema = quantized_decomposed::quantize_per_tensor(Tensor input, float scale, int zero_point, int quant_min, int quant_max, ScalarType dtype) -> Tensor",
+      "<EdgeOpOverload: quantized_decomposed.dequantize_per_tensor.default>: schema = quantized_decomposed::dequantize_per_tensor(Tensor input, float scale, int zero_point, int quant_min, int quant_max, ScalarType dtype, *, ScalarType? out_dtype=None) -> Tensor"
+    ],
+    "scratch_bytes": 16448,
+    "fast_scratch_bytes": 16896,
+    "fits_requested_budgets": true
+  }
+}

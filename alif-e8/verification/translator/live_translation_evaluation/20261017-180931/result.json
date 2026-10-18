@@ -1,0 +1,1290 @@
+{
+  "checkpoint_revision": "691fd47381a57d0de256a0e0b201bd83d1f48ba0",
+  "samples_sha256": "56de607ea230ba972fcbe02adaf10a01dc8c097db32b4a61cb9d0b5d7e9888e0",
+  "checkpoint_manifest_sha256": "5e6a5af98e5c1185a68d243638bcd10a031a03c2b592e5b5d329eb4f15000ec9",
+  "tosa_reference_sha256": "40ad056bed4301a4e25bf6c8e26b01937db06093cf59d9abaf2a9e221602ee05",
+  "calibration_denominator": 24,
+  "frozen_evaluation_denominator": 8,
+  "diagnostic_denominator": 3,
+  "eos_token_id": 0,
+  "firmware_sha256": "3886b671e09a51b8b472282f602fce9af6993f0ec9870d72d8b9ff0e8c55db14",
+  "results": [
+    {
+      "input": "Welcome",
+      "group": "frozen_evaluation",
+      "float_text": "Bienvenidos",
+      "float_tokens": [
+        19307,
+        0
+      ],
+      "float_eos": true,
+      "quantized_host_tokens": [
+        19307,
+        0
+      ],
+      "tosa_reference_tokens": [
+        19307,
+        0
+      ],
+      "status": 2,
+      "error": 0,
+      "text": "Bienvenidos",
+      "tokens": [
+        19307,
+        0
+      ],
+      "token_count": 2,
+      "eos": true,
+      "truncated": false,
+      "elapsed_ms": 761,
+      "host_wall_seconds": 0.8355505420040572,
+      "matches_float_tokens": true,
+      "before": {
+        "live_frames": 1544,
+        "live_milliseconds": 63165,
+        "translator_lcd_presents": 1545,
+        "translator_lcd_timeouts": 0,
+        "translator_lcd_errors": 0,
+        "live_display_paused": 0,
+        "live_display_pause_count": 0,
+        "live_display_last_pause_ms": 0,
+        "live_display_total_pause_ms": 0,
+        "npu": {
+          "HP_U55": {
+            "invocations": 0,
+            "failures": 0,
+            "elapsed_ms": 0,
+            "last_ms": 0,
+            "total_cycles": 0,
+            "active_cycles": 0,
+            "mac_cycles": 0,
+            "idle_cycles": 0
+          },
+          "HG_U85": {
+            "invocations": 0,
+            "failures": 0,
+            "elapsed_ms": 0,
+            "last_ms": 0,
+            "total_cycles": 0,
+            "active_cycles": 0,
+            "mac_cycles": 0,
+            "idle_cycles": 0
+          }
+        }
+      },
+      "after": {
+        "live_frames": 1546,
+        "live_milliseconds": 64005,
+        "translator_lcd_presents": 1547,
+        "translator_lcd_timeouts": 0,
+        "translator_lcd_errors": 0,
+        "live_display_paused": 0,
+        "live_display_pause_count": 1,
+        "live_display_last_pause_ms": 761,
+        "live_display_total_pause_ms": 761,
+        "npu": {
+          "HP_U55": {
+            "invocations": 0,
+            "failures": 0,
+            "elapsed_ms": 0,
+            "last_ms": 0,
+            "total_cycles": 0,
+            "active_cycles": 0,
+            "mac_cycles": 0,
+            "idle_cycles": 0
+          },
+          "HG_U85": {
+            "invocations": 18,
+            "failures": 0,
+            "elapsed_ms": 20,
+            "last_ms": 0,
+            "total_cycles": 9535565,
+            "active_cycles": 9319353,
+            "mac_cycles": 5600064,
+            "idle_cycles": 216230
+          }
+        }
+      },
+      "matches_quantized_host_tokens": true,
+      "matches_tosa_reference_tokens": true
+    },
+    {
+      "input": "Do not enter",
+      "group": "frozen_evaluation",
+      "float_text": "No entrar",
+      "float_tokens": [
+        150,
+        3772,
+        0
+      ],
+      "float_eos": true,
+      "quantized_host_tokens": [
+        150,
+        3772,
+        0
+      ],
+      "tosa_reference_tokens": [
+        150,
+        3772,
+        0
+      ],
+      "status": 2,
+      "error": 0,
+      "text": "No entrar",
+      "tokens": [
+        150,
+        3772,
+        0
+      ],
+      "token_count": 3,
+      "eos": true,
+      "truncated": false,
+      "elapsed_ms": 1051,
+      "host_wall_seconds": 1.1187751660036156,
+      "matches_float_tokens": true,
+      "before": {
+        "live_frames": 1546,
+        "live_milliseconds": 64014,
+        "translator_lcd_presents": 1547,
+        "translator_lcd_timeouts": 0,
+        "translator_lcd_errors": 0,
+        "live_display_paused": 0,
+        "live_display_pause_count": 1,
+        "live_display_last_pause_ms": 761,
+        "live_display_total_pause_ms": 761,
+        "npu": {
+          "HP_U55": {
+            "invocations": 0,
+            "failures": 0,
+            "elapsed_ms": 0,
+            "last_ms": 0,
+            "total_cycles": 0,
+            "active_cycles": 0,
+            "mac_cycles": 0,
+            "idle_cycles": 0
+          },
+          "HG_U85": {
+            "invocations": 18,
+            "failures": 0,
+            "elapsed_ms": 20,
+            "last_ms": 0,
+            "total_cycles": 9535565,
+            "active_cycles": 9319353,
+            "mac_cycles": 5600064,
+            "idle_cycles": 216230
+          }
+        }
+      },
+      "after": {
+        "live_frames": 1548,
+        "live_milliseconds": 65137,
+        "translator_lcd_presents": 1549,
+        "translator_lcd_timeouts": 0,
+        "translator_lcd_errors": 0,
+        "live_display_paused": 0,
+        "live_display_pause_count": 2,
+        "live_display_last_pause_ms": 1051,
+        "live_display_total_pause_ms": 1812,
+        "npu": {
+          "HP_U55": {
+            "invocations": 0,
+            "failures": 0,
+            "elapsed_ms": 0,
+            "last_ms": 0,
+            "total_cycles": 0,
+            "active_cycles": 0,
+            "mac_cycles": 0,
+            "idle_cycles": 0
+          },
+          "HG_U85": {
+            "invocations": 42,
+            "failures": 0,
+            "elapsed_ms": 54,
+            "last_ms": 1,
+            "total_cycles": 21916749,
+            "active_cycles": 21412153,
+            "mac_cycles": 12514176,
+            "idle_cycles": 504638
+          }
+        }
+      },
+      "matches_quantized_host_tokens": true,
+      "matches_tosa_reference_tokens": true
+    },
+    {
+      "input": "Please close the door",
+      "group": "frozen_evaluation",
+      "float_text": "Por favor, cierre la puerta",
+      "float_tokens": [
+        242,
+        1145,
+        2,
+        5082,
+        8,
+        2696,
+        0
+      ],
+      "float_eos": true,
+      "quantized_host_tokens": [
+        242,
+        1145,
+        2,
+        5082,
+        8,
+        2696,
+        0
+      ],
+      "tosa_reference_tokens": [
+        242,
+        1145,
+        2,
+        5082,
+        8,
+        2696,
+        0
+      ],
+      "status": 2,
+      "error": 0,
+      "text": "Por favor, cierre la puerta",
+      "tokens": [
+        242,
+        1145,
+        2,
+        5082,
+        8,
+        2696,
+        0
+      ],
+      "token_count": 7,
+      "eos": true,
+      "truncated": false,
+      "elapsed_ms": 2212,
+      "host_wall_seconds": 2.2887156669967226,
+      "matches_float_tokens": true,
+      "before": {
+        "live_frames": 1548,
+        "live_milliseconds": 65149,
+        "translator_lcd_presents": 1549,
+        "translator_lcd_timeouts": 0,
+        "translator_lcd_errors": 0,
+        "live_display_paused": 0,
+        "live_display_pause_count": 2,
+        "live_display_last_pause_ms": 1051,
+        "live_display_total_pause_ms": 1812,
+        "npu": {
+          "HP_U55": {
+            "invocations": 0,
+            "failures": 0,
+            "elapsed_ms": 0,
+            "last_ms": 0,
+            "total_cycles": 0,
+            "active_cycles": 0,
+            "mac_cycles": 0,
+            "idle_cycles": 0
+          },
+          "HG_U85": {
+            "invocations": 42,
+            "failures": 0,
+            "elapsed_ms": 54,
+            "last_ms": 1,
+            "total_cycles": 21916749,
+            "active_cycles": 21412153,
+            "mac_cycles": 12514176,
+            "idle_cycles": 504638
+          }
+        }
+      },
+      "after": {
+        "live_frames": 1550,
+        "live_milliseconds": 67442,
+        "translator_lcd_presents": 1551,
+        "translator_lcd_timeouts": 0,
+        "translator_lcd_errors": 0,
+        "live_display_paused": 0,
+        "live_display_pause_count": 3,
+        "live_display_last_pause_ms": 2212,
+        "live_display_total_pause_ms": 4024,
+        "npu": {
+          "HP_U55": {
+            "invocations": 0,
+            "failures": 0,
+            "elapsed_ms": 0,
+            "last_ms": 0,
+            "total_cycles": 0,
+            "active_cycles": 0,
+            "mac_cycles": 0,
+            "idle_cycles": 0
+          },
+          "HG_U85": {
+            "invocations": 90,
+            "failures": 0,
+            "elapsed_ms": 116,
+            "last_ms": 1,
+            "total_cycles": 45680672,
+            "active_cycles": 44598696,
+            "mac_cycles": 24684480,
+            "idle_cycles": 1082066
+          }
+        }
+      },
+      "matches_quantized_host_tokens": true,
+      "matches_tosa_reference_tokens": true
+    },
+    {
+      "input": "The store is open",
+      "group": "frozen_evaluation",
+      "float_text": "La tienda est\u00e1 abierta",
+      "float_tokens": [
+        60,
+        3392,
+        103,
+        5250,
+        0
+      ],
+      "float_eos": true,
+      "quantized_host_tokens": [
+        60,
+        3392,
+        103,
+        5250,
+        0
+      ],
+      "tosa_reference_tokens": [
+        60,
+        3392,
+        103,
+        5250,
+        0
+      ],
+      "status": 2,
+      "error": 0,
+      "text": "La tienda est\u00e1 abierta",
+      "tokens": [
+        60,
+        3392,
+        103,
+        5250,
+        0
+      ],
+      "token_count": 5,
+      "eos": true,
+      "truncated": false,
+      "elapsed_ms": 1631,
+      "host_wall_seconds": 1.6783412079967093,
+      "matches_float_tokens": true,
+      "before": {
+        "live_frames": 1550,
+        "live_milliseconds": 67452,
+        "translator_lcd_presents": 1551,
+        "translator_lcd_timeouts": 0,
+        "translator_lcd_errors": 0,
+        "live_display_paused": 0,
+        "live_display_pause_count": 3,
+        "live_display_last_pause_ms": 2212,
+        "live_display_total_pause_ms": 4024,
+        "npu": {
+          "HP_U55": {
+            "invocations": 0,
+            "failures": 0,
+            "elapsed_ms": 0,
+            "last_ms": 0,
+            "total_cycles": 0,
+            "active_cycles": 0,
+            "mac_cycles": 0,
+            "idle_cycles": 0
+          },
+          "HG_U85": {
+            "invocations": 90,
+            "failures": 0,
+            "elapsed_ms": 116,
+            "last_ms": 1,
+            "total_cycles": 45680672,
+            "active_cycles": 44598696,
+            "mac_cycles": 24684480,
+            "idle_cycles": 1082066
+          }
+        }
+      },
+      "after": {
+        "live_frames": 1551,
+        "live_milliseconds": 69134,
+        "translator_lcd_presents": 1552,
+        "translator_lcd_timeouts": 0,
+        "translator_lcd_errors": 0,
+        "live_display_paused": 0,
+        "live_display_pause_count": 4,
+        "live_display_last_pause_ms": 1631,
+        "live_display_total_pause_ms": 5655,
+        "npu": {
+          "HP_U55": {
+            "invocations": 0,
+            "failures": 0,
+            "elapsed_ms": 0,
+            "last_ms": 0,
+            "total_cycles": 0,
+            "active_cycles": 0,
+            "mac_cycles": 0,
+            "idle_cycles": 0
+          },
+          "HG_U85": {
+            "invocations": 126,
+            "failures": 0,
+            "elapsed_ms": 164,
+            "last_ms": 1,
+            "total_cycles": 63752566,
+            "active_cycles": 62238306,
+            "mac_cycles": 34226688,
+            "idle_cycles": 1514386
+          }
+        }
+      },
+      "matches_quantized_host_tokens": true,
+      "matches_tosa_reference_tokens": true
+    },
+    {
+      "input": "Where is the train station?",
+      "group": "frozen_evaluation",
+      "float_text": "\u00bfD\u00f3nde est\u00e1 la estaci\u00f3n de tren?",
+      "float_tokens": [
+        107,
+        8761,
+        103,
+        8,
+        3132,
+        3,
+        3644,
+        63,
+        0
+      ],
+      "float_eos": true,
+      "quantized_host_tokens": [
+        107,
+        8761,
+        103,
+        8,
+        3132,
+        3,
+        3644,
+        63,
+        0
+      ],
+      "tosa_reference_tokens": [
+        107,
+        8761,
+        103,
+        8,
+        3132,
+        3,
+        3644,
+        63,
+        0
+      ],
+      "status": 2,
+      "error": 0,
+      "text": "\u00bfD\u00f3nde est\u00e1 la estaci\u00f3n de tren?",
+      "tokens": [
+        107,
+        8761,
+        103,
+        8,
+        3132,
+        3,
+        3644,
+        63,
+        0
+      ],
+      "token_count": 9,
+      "eos": true,
+      "truncated": false,
+      "elapsed_ms": 2792,
+      "host_wall_seconds": 2.843256084001041,
+      "matches_float_tokens": true,
+      "before": {
+        "live_frames": 1551,
+        "live_milliseconds": 69144,
+        "translator_lcd_presents": 1552,
+        "translator_lcd_timeouts": 0,
+        "translator_lcd_errors": 0,
+        "live_display_paused": 0,
+        "live_display_pause_count": 4,
+        "live_display_last_pause_ms": 1631,
+        "live_display_total_pause_ms": 5655,
+        "npu": {
+          "HP_U55": {
+            "invocations": 0,
+            "failures": 0,
+            "elapsed_ms": 0,
+            "last_ms": 0,
+            "total_cycles": 0,
+            "active_cycles": 0,
+            "mac_cycles": 0,
+            "idle_cycles": 0
+          },
+          "HG_U85": {
+            "invocations": 126,
+            "failures": 0,
+            "elapsed_ms": 164,
+            "last_ms": 1,
+            "total_cycles": 63752566,
+            "active_cycles": 62238306,
+            "mac_cycles": 34226688,
+            "idle_cycles": 1514386
+          }
+        }
+      },
+      "after": {
+        "live_frames": 1552,
+        "live_milliseconds": 71991,
+        "translator_lcd_presents": 1553,
+        "translator_lcd_timeouts": 0,
+        "translator_lcd_errors": 0,
+        "live_display_paused": 0,
+        "live_display_pause_count": 5,
+        "live_display_last_pause_ms": 2792,
+        "live_display_total_pause_ms": 8447,
+        "npu": {
+          "HP_U55": {
+            "invocations": 0,
+            "failures": 0,
+            "elapsed_ms": 0,
+            "last_ms": 0,
+            "total_cycles": 0,
+            "active_cycles": 0,
+            "mac_cycles": 0,
+            "idle_cycles": 0
+          },
+          "HG_U85": {
+            "invocations": 186,
+            "failures": 0,
+            "elapsed_ms": 240,
+            "last_ms": 1,
+            "total_cycles": 93206381,
+            "active_cycles": 90971774,
+            "mac_cycles": 49025088,
+            "idle_cycles": 2234793
+          }
+        }
+      },
+      "matches_quantized_host_tokens": true,
+      "matches_tosa_reference_tokens": true
+    },
+    {
+      "input": "Caution hot surface",
+      "group": "frozen_evaluation",
+      "float_text": "Cantidad de temperatura ambiente",
+      "float_tokens": [
+        22627,
+        3,
+        1821,
+        1573,
+        0
+      ],
+      "float_eos": true,
+      "quantized_host_tokens": [
+        22627,
+        3,
+        1821,
+        1573,
+        0
+      ],
+      "tosa_reference_tokens": [
+        22627,
+        3,
+        1821,
+        1573,
+        0
+      ],
+      "status": 2,
+      "error": 0,
+      "text": "Cantidad de temperatura ambiente",
+      "tokens": [
+        22627,
+        3,
+        1821,
+        1573,
+        0
+      ],
+      "token_count": 5,
+      "eos": true,
+      "truncated": false,
+      "elapsed_ms": 1631,
+      "host_wall_seconds": 1.7252515410000342,
+      "matches_float_tokens": true,
+      "before": {
+        "live_frames": 1553,
+        "live_milliseconds": 72001,
+        "translator_lcd_presents": 1554,
+        "translator_lcd_timeouts": 0,
+        "translator_lcd_errors": 0,
+        "live_display_paused": 0,
+        "live_display_pause_count": 5,
+        "live_display_last_pause_ms": 2792,
+        "live_display_total_pause_ms": 8447,
+        "npu": {
+          "HP_U55": {
+            "invocations": 0,
+            "failures": 0,
+            "elapsed_ms": 0,
+            "last_ms": 0,
+            "total_cycles": 0,
+            "active_cycles": 0,
+            "mac_cycles": 0,
+            "idle_cycles": 0
+          },
+          "HG_U85": {
+            "invocations": 186,
+            "failures": 0,
+            "elapsed_ms": 240,
+            "last_ms": 1,
+            "total_cycles": 93206381,
+            "active_cycles": 90971774,
+            "mac_cycles": 49025088,
+            "idle_cycles": 2234793
+          }
+        }
+      },
+      "after": {
+        "live_frames": 1554,
+        "live_milliseconds": 73730,
+        "translator_lcd_presents": 1555,
+        "translator_lcd_timeouts": 0,
+        "translator_lcd_errors": 0,
+        "live_display_paused": 0,
+        "live_display_pause_count": 6,
+        "live_display_last_pause_ms": 1631,
+        "live_display_total_pause_ms": 10078,
+        "npu": {
+          "HP_U55": {
+            "invocations": 0,
+            "failures": 0,
+            "elapsed_ms": 0,
+            "last_ms": 0,
+            "total_cycles": 0,
+            "active_cycles": 0,
+            "mac_cycles": 0,
+            "idle_cycles": 0
+          },
+          "HG_U85": {
+            "invocations": 222,
+            "failures": 0,
+            "elapsed_ms": 284,
+            "last_ms": 0,
+            "total_cycles": 111278208,
+            "active_cycles": 108611522,
+            "mac_cycles": 58567296,
+            "idle_cycles": 2666908
+          }
+        }
+      },
+      "matches_quantized_host_tokens": true,
+      "matches_tosa_reference_tokens": true
+    },
+    {
+      "input": "Press the green button",
+      "group": "frozen_evaluation",
+      "float_text": "Presione el bot\u00f3n verde",
+      "float_tokens": [
+        1864,
+        3117,
+        78,
+        14,
+        4543,
+        5416,
+        0
+      ],
+      "float_eos": true,
+      "quantized_host_tokens": [
+        1864,
+        3117,
+        78,
+        14,
+        4543,
+        5416,
+        0
+      ],
+      "tosa_reference_tokens": [
+        23285,
+        14,
+        4543,
+        5416,
+        0
+      ],
+      "status": 2,
+      "error": 0,
+      "text": "Pulse el bot\u00f3n verde",
+      "tokens": [
+        23285,
+        14,
+        4543,
+        5416,
+        0
+      ],
+      "token_count": 5,
+      "eos": true,
+      "truncated": false,
+      "elapsed_ms": 1631,
+      "host_wall_seconds": 1.724536415997136,
+      "matches_float_tokens": false,
+      "before": {
+        "live_frames": 1555,
+        "live_milliseconds": 73741,
+        "translator_lcd_presents": 1556,
+        "translator_lcd_timeouts": 0,
+        "translator_lcd_errors": 0,
+        "live_display_paused": 0,
+        "live_display_pause_count": 6,
+        "live_display_last_pause_ms": 1631,
+        "live_display_total_pause_ms": 10078,
+        "npu": {
+          "HP_U55": {
+            "invocations": 0,
+            "failures": 0,
+            "elapsed_ms": 0,
+            "last_ms": 0,
+            "total_cycles": 0,
+            "active_cycles": 0,
+            "mac_cycles": 0,
+            "idle_cycles": 0
+          },
+          "HG_U85": {
+            "invocations": 222,
+            "failures": 0,
+            "elapsed_ms": 284,
+            "last_ms": 0,
+            "total_cycles": 111278208,
+            "active_cycles": 108611522,
+            "mac_cycles": 58567296,
+            "idle_cycles": 2666908
+          }
+        }
+      },
+      "after": {
+        "live_frames": 1557,
+        "live_milliseconds": 75469,
+        "translator_lcd_presents": 1558,
+        "translator_lcd_timeouts": 0,
+        "translator_lcd_errors": 0,
+        "live_display_paused": 0,
+        "live_display_pause_count": 7,
+        "live_display_last_pause_ms": 1631,
+        "live_display_total_pause_ms": 11709,
+        "npu": {
+          "HP_U55": {
+            "invocations": 0,
+            "failures": 0,
+            "elapsed_ms": 0,
+            "last_ms": 0,
+            "total_cycles": 0,
+            "active_cycles": 0,
+            "mac_cycles": 0,
+            "idle_cycles": 0
+          },
+          "HG_U85": {
+            "invocations": 258,
+            "failures": 0,
+            "elapsed_ms": 324,
+            "last_ms": 0,
+            "total_cycles": 129350269,
+            "active_cycles": 126251244,
+            "mac_cycles": 68109504,
+            "idle_cycles": 3099283
+          }
+        }
+      },
+      "matches_quantized_host_tokens": false,
+      "matches_tosa_reference_tokens": true
+    },
+    {
+      "input": "This machine is out of order",
+      "group": "frozen_evaluation",
+      "float_text": "Esta m\u00e1quina est\u00e1 fuera de servicio",
+      "float_tokens": [
+        430,
+        3203,
+        103,
+        880,
+        3,
+        547,
+        0
+      ],
+      "float_eos": true,
+      "quantized_host_tokens": [
+        430,
+        3203,
+        103,
+        880,
+        3,
+        547,
+        0
+      ],
+      "tosa_reference_tokens": [
+        430,
+        3203,
+        103,
+        880,
+        3,
+        547,
+        0
+      ],
+      "status": 2,
+      "error": 0,
+      "text": "Esta m\u00e1quina est\u00e1 fuera de servicio",
+      "tokens": [
+        430,
+        3203,
+        103,
+        880,
+        3,
+        547,
+        0
+      ],
+      "token_count": 7,
+      "eos": true,
+      "truncated": false,
+      "elapsed_ms": 2211,
+      "host_wall_seconds": 2.2851135410019197,
+      "matches_float_tokens": true,
+      "before": {
+        "live_frames": 1557,
+        "live_milliseconds": 75480,
+        "translator_lcd_presents": 1558,
+        "translator_lcd_timeouts": 0,
+        "translator_lcd_errors": 0,
+        "live_display_paused": 0,
+        "live_display_pause_count": 7,
+        "live_display_last_pause_ms": 1631,
+        "live_display_total_pause_ms": 11709,
+        "npu": {
+          "HP_U55": {
+            "invocations": 0,
+            "failures": 0,
+            "elapsed_ms": 0,
+            "last_ms": 0,
+            "total_cycles": 0,
+            "active_cycles": 0,
+            "mac_cycles": 0,
+            "idle_cycles": 0
+          },
+          "HG_U85": {
+            "invocations": 258,
+            "failures": 0,
+            "elapsed_ms": 324,
+            "last_ms": 0,
+            "total_cycles": 129350269,
+            "active_cycles": 126251244,
+            "mac_cycles": 68109504,
+            "idle_cycles": 3099283
+          }
+        }
+      },
+      "after": {
+        "live_frames": 1559,
+        "live_milliseconds": 77769,
+        "translator_lcd_presents": 1560,
+        "translator_lcd_timeouts": 0,
+        "translator_lcd_errors": 0,
+        "live_display_paused": 0,
+        "live_display_pause_count": 8,
+        "live_display_last_pause_ms": 2211,
+        "live_display_total_pause_ms": 13920,
+        "npu": {
+          "HP_U55": {
+            "invocations": 0,
+            "failures": 0,
+            "elapsed_ms": 0,
+            "last_ms": 0,
+            "total_cycles": 0,
+            "active_cycles": 0,
+            "mac_cycles": 0,
+            "idle_cycles": 0
+          },
+          "HG_U85": {
+            "invocations": 306,
+            "failures": 0,
+            "elapsed_ms": 386,
+            "last_ms": 0,
+            "total_cycles": 153113479,
+            "active_cycles": 149437799,
+            "mac_cycles": 80279808,
+            "idle_cycles": 3675986
+          }
+        }
+      },
+      "matches_quantized_host_tokens": true,
+      "matches_tosa_reference_tokens": true
+    },
+    {
+      "input": "T",
+      "group": "diagnostic",
+      "float_text": "T",
+      "float_tokens": [
+        345,
+        0
+      ],
+      "float_eos": true,
+      "tosa_reference_tokens": [
+        345,
+        0
+      ],
+      "status": 2,
+      "error": 0,
+      "text": "T",
+      "tokens": [
+        345,
+        0
+      ],
+      "token_count": 2,
+      "eos": true,
+      "truncated": false,
+      "elapsed_ms": 761,
+      "host_wall_seconds": 0.8344067079960951,
+      "matches_float_tokens": true,
+      "before": {
+        "live_frames": 1559,
+        "live_milliseconds": 77779,
+        "translator_lcd_presents": 1560,
+        "translator_lcd_timeouts": 0,
+        "translator_lcd_errors": 0,
+        "live_display_paused": 0,
+        "live_display_pause_count": 8,
+        "live_display_last_pause_ms": 2211,
+        "live_display_total_pause_ms": 13920,
+        "npu": {
+          "HP_U55": {
+            "invocations": 0,
+            "failures": 0,
+            "elapsed_ms": 0,
+            "last_ms": 0,
+            "total_cycles": 0,
+            "active_cycles": 0,
+            "mac_cycles": 0,
+            "idle_cycles": 0
+          },
+          "HG_U85": {
+            "invocations": 306,
+            "failures": 0,
+            "elapsed_ms": 386,
+            "last_ms": 0,
+            "total_cycles": 153113479,
+            "active_cycles": 149437799,
+            "mac_cycles": 80279808,
+            "idle_cycles": 3675986
+          }
+        }
+      },
+      "after": {
+        "live_frames": 1560,
+        "live_milliseconds": 78618,
+        "translator_lcd_presents": 1561,
+        "translator_lcd_timeouts": 0,
+        "translator_lcd_errors": 0,
+        "live_display_paused": 0,
+        "live_display_pause_count": 9,
+        "live_display_last_pause_ms": 761,
+        "live_display_total_pause_ms": 14681,
+        "npu": {
+          "HP_U55": {
+            "invocations": 0,
+            "failures": 0,
+            "elapsed_ms": 0,
+            "last_ms": 0,
+            "total_cycles": 0,
+            "active_cycles": 0,
+            "mac_cycles": 0,
+            "idle_cycles": 0
+          },
+          "HG_U85": {
+            "invocations": 324,
+            "failures": 0,
+            "elapsed_ms": 407,
+            "last_ms": 0,
+            "total_cycles": 162649019,
+            "active_cycles": 158757144,
+            "mac_cycles": 85879872,
+            "idle_cycles": 3892199
+          }
+        }
+      },
+      "matches_tosa_reference_tokens": true
+    },
+    {
+      "input": "Hello",
+      "group": "diagnostic",
+      "float_text": "Hola",
+      "float_tokens": [
+        19017,
+        0
+      ],
+      "float_eos": true,
+      "tosa_reference_tokens": [
+        19017,
+        0
+      ],
+      "status": 2,
+      "error": 0,
+      "text": "Hola",
+      "tokens": [
+        19017,
+        0
+      ],
+      "token_count": 2,
+      "eos": true,
+      "truncated": false,
+      "elapsed_ms": 761,
+      "host_wall_seconds": 0.8433086250006454,
+      "matches_float_tokens": true,
+      "before": {
+        "live_frames": 1561,
+        "live_milliseconds": 78629,
+        "translator_lcd_presents": 1562,
+        "translator_lcd_timeouts": 0,
+        "translator_lcd_errors": 0,
+        "live_display_paused": 0,
+        "live_display_pause_count": 9,
+        "live_display_last_pause_ms": 761,
+        "live_display_total_pause_ms": 14681,
+        "npu": {
+          "HP_U55": {
+            "invocations": 0,
+            "failures": 0,
+            "elapsed_ms": 0,
+            "last_ms": 0,
+            "total_cycles": 0,
+            "active_cycles": 0,
+            "mac_cycles": 0,
+            "idle_cycles": 0
+          },
+          "HG_U85": {
+            "invocations": 324,
+            "failures": 0,
+            "elapsed_ms": 407,
+            "last_ms": 0,
+            "total_cycles": 162649019,
+            "active_cycles": 158757144,
+            "mac_cycles": 85879872,
+            "idle_cycles": 3892199
+          }
+        }
+      },
+      "after": {
+        "live_frames": 1562,
+        "live_milliseconds": 79476,
+        "translator_lcd_presents": 1563,
+        "translator_lcd_timeouts": 0,
+        "translator_lcd_errors": 0,
+        "live_display_paused": 0,
+        "live_display_pause_count": 10,
+        "live_display_last_pause_ms": 761,
+        "live_display_total_pause_ms": 15442,
+        "npu": {
+          "HP_U55": {
+            "invocations": 0,
+            "failures": 0,
+            "elapsed_ms": 0,
+            "last_ms": 0,
+            "total_cycles": 0,
+            "active_cycles": 0,
+            "mac_cycles": 0,
+            "idle_cycles": 0
+          },
+          "HG_U85": {
+            "invocations": 342,
+            "failures": 0,
+            "elapsed_ms": 433,
+            "last_ms": 1,
+            "total_cycles": 172184332,
+            "active_cycles": 168076519,
+            "mac_cycles": 91479936,
+            "idle_cycles": 4108155
+          }
+        }
+      },
+      "matches_tosa_reference_tokens": true
+    },
+    {
+      "input": "STOP",
+      "group": "diagnostic",
+      "float_text": "ESTNDAR",
+      "float_tokens": [
+        17,
+        9579,
+        1,
+        16705,
+        4041,
+        0
+      ],
+      "float_eos": true,
+      "status": 2,
+      "error": 0,
+      "text": "ESTNDAR",
+      "tokens": [
+        17,
+        9579,
+        1,
+        16705,
+        4041,
+        0
+      ],
+      "token_count": 6,
+      "eos": true,
+      "truncated": false,
+      "elapsed_ms": 1921,
+      "host_wall_seconds": 1.9844437920037308,
+      "matches_float_tokens": true,
+      "before": {
+        "live_frames": 1563,
+        "live_milliseconds": 79487,
+        "translator_lcd_presents": 1564,
+        "translator_lcd_timeouts": 0,
+        "translator_lcd_errors": 0,
+        "live_display_paused": 0,
+        "live_display_pause_count": 10,
+        "live_display_last_pause_ms": 761,
+        "live_display_total_pause_ms": 15442,
+        "npu": {
+          "HP_U55": {
+            "invocations": 0,
+            "failures": 0,
+            "elapsed_ms": 0,
+            "last_ms": 0,
+            "total_cycles": 0,
+            "active_cycles": 0,
+            "mac_cycles": 0,
+            "idle_cycles": 0
+          },
+          "HG_U85": {
+            "invocations": 342,
+            "failures": 0,
+            "elapsed_ms": 433,
+            "last_ms": 1,
+            "total_cycles": 172184332,
+            "active_cycles": 168076519,
+            "mac_cycles": 91479936,
+            "idle_cycles": 4108155
+          }
+        }
+      },
+      "after": {
+        "live_frames": 1564,
+        "live_milliseconds": 81476,
+        "translator_lcd_presents": 1565,
+        "translator_lcd_timeouts": 0,
+        "translator_lcd_errors": 0,
+        "live_display_paused": 0,
+        "live_display_pause_count": 11,
+        "live_display_last_pause_ms": 1921,
+        "live_display_total_pause_ms": 17363,
+        "npu": {
+          "HP_U55": {
+            "invocations": 0,
+            "failures": 0,
+            "elapsed_ms": 0,
+            "last_ms": 0,
+            "total_cycles": 0,
+            "active_cycles": 0,
+            "mac_cycles": 0,
+            "idle_cycles": 0
+          },
+          "HG_U85": {
+            "invocations": 384,
+            "failures": 0,
+            "elapsed_ms": 483,
+            "last_ms": 1,
+            "total_cycles": 193101780,
+            "active_cycles": 188489688,
+            "mac_cycles": 102336192,
+            "idle_cycles": 4612476
+          }
+        }
+      }
+    }
+  ],
+  "live_ocr_restored": false,
+  "selected_group": "all",
+  "requested_pause_display": 1,
+  "before": {
+    "live_frames": 1544,
+    "live_milliseconds": 63155,
+    "translator_lcd_presents": 1545,
+    "translator_lcd_timeouts": 0,
+    "translator_lcd_errors": 0,
+    "live_display_paused": 0,
+    "live_display_pause_count": 0,
+    "live_display_last_pause_ms": 0,
+    "live_display_total_pause_ms": 0,
+    "npu": {
+      "HP_U55": {
+        "invocations": 0,
+        "failures": 0,
+        "elapsed_ms": 0,
+        "last_ms": 0,
+        "total_cycles": 0,
+        "active_cycles": 0,
+        "mac_cycles": 0,
+        "idle_cycles": 0
+      },
+      "HG_U85": {
+        "invocations": 0,
+        "failures": 0,
+        "elapsed_ms": 0,
+        "last_ms": 0,
+        "total_cycles": 0,
+        "active_cycles": 0,
+        "mac_cycles": 0,
+        "idle_cycles": 0
+      }
+    }
+  },
+  "completed": 11,
+  "frozen_evaluation": {
+    "denominator": 8,
+    "completed": 8,
+    "float_token_matches": 7,
+    "eos_finished": 8,
+    "successful": 8,
+    "tosa_reference_denominator": 8,
+    "tosa_reference_matches": 8
+  },
+  "diagnostic": {
+    "denominator": 3,
+    "completed": 3,
+    "float_token_matches": 3,
+    "eos_finished": 3,
+    "successful": 3,
+    "tosa_reference_denominator": 2,
+    "tosa_reference_matches": 2
+  },
+  "after": {
+    "live_frames": 1564,
+    "live_milliseconds": 81481,
+    "translator_lcd_presents": 1565,
+    "translator_lcd_timeouts": 0,
+    "translator_lcd_errors": 0,
+    "live_display_paused": 0,
+    "live_display_pause_count": 11,
+    "live_display_last_pause_ms": 1921,
+    "live_display_total_pause_ms": 17363,
+    "npu": {
+      "HP_U55": {
+        "invocations": 0,
+        "failures": 0,
+        "elapsed_ms": 0,
+        "last_ms": 0,
+        "total_cycles": 0,
+        "active_cycles": 0,
+        "mac_cycles": 0,
+        "idle_cycles": 0
+      },
+      "HG_U85": {
+        "invocations": 384,
+        "failures": 0,
+        "elapsed_ms": 483,
+        "last_ms": 1,
+        "total_cycles": 193101780,
+        "active_cycles": 188489688,
+        "mac_cycles": 102336192,
+        "idle_cycles": 4612476
+      }
+    }
+  }
+}

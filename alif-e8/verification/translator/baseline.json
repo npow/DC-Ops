@@ -1,0 +1,64 @@
+{
+  "denominator": 8,
+  "exact_matches": 8,
+  "samples_sha256": "56de607ea230ba972fcbe02adaf10a01dc8c097db32b4a61cb9d0b5d7e9888e0",
+  "sequence_length": 32,
+  "results": [
+    {
+      "input": "Welcome",
+      "huggingface": "Bienvenidos",
+      "fixed_shape": "Bienvenidos",
+      "exact_match": true,
+      "finished": true
+    },
+    {
+      "input": "Do not enter",
+      "huggingface": "No entrar",
+      "fixed_shape": "No entrar",
+      "exact_match": true,
+      "finished": true
+    },
+    {
+      "input": "Please close the door",
+      "huggingface": "Por favor, cierre la puerta",
+      "fixed_shape": "Por favor, cierre la puerta",
+      "exact_match": true,
+      "finished": true
+    },
+    {
+      "input": "The store is open",
+      "huggingface": "La tienda est\u00e1 abierta",
+      "fixed_shape": "La tienda est\u00e1 abierta",
+      "exact_match": true,
+      "finished": true
+    },
+    {
+      "input": "Where is the train station?",
+      "huggingface": "\u00bfD\u00f3nde est\u00e1 la estaci\u00f3n de tren?",
+      "fixed_shape": "\u00bfD\u00f3nde est\u00e1 la estaci\u00f3n de tren?",
+      "exact_match": true,
+      "finished": true
+    },
+    {
+      "input": "Caution hot surface",
+      "huggingface": "Cantidad de temperatura ambiente",
+      "fixed_shape": "Cantidad de temperatura ambiente",
+      "exact_match": true,
+      "finished": true
+    },
+    {
+      "input": "Press the green button",
+      "huggingface": "Presione el bot\u00f3n verde",
+      "fixed_shape": "Presione el bot\u00f3n verde",
+      "exact_match": true,
+      "finished": true
+    },
+    {
+      "input": "This machine is out of order",
+      "huggingface": "Esta m\u00e1quina est\u00e1 fuera de servicio",
+      "fixed_shape": "Esta m\u00e1quina est\u00e1 fuera de servicio",
+      "exact_match": true,
+      "finished": true
+    }
+  ]
+}

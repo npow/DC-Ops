@@ -1,0 +1,34 @@
+solution:
+  created-for: CMSIS-Toolbox@2.15.0
+  cdefault: null
+  compiler: GCC
+  packs:
+  - pack: PyTorch::ExecuTorch@1.5.1
+  - pack: ARM::CMSIS
+  - pack: ARM::CMSIS-NN
+  - pack: ARM::CMSIS-Compiler
+  - pack: ARM::Cortex_DFP
+  - pack: ARM::SSE_320_BSP@1.0.0
+  - pack: AlifSemiconductor::Ensemble@^2.2.0-0
+  target-types:
+  - type: DevKit-E8
+    board: Alif Semiconductor::DevKit-E8
+    device: Alif Semiconductor::AE822FA0E5597LS0:M55_HP
+    variables:
+    - Board-Layer: $SolutionDir()$/translation/board/Board-U85.clayer.yml
+    - AI-Layer: $SolutionDir()$/translation/runtime.clayer.yml
+    target-set:
+    - set: null
+      images:
+      - project-context: translator.Debug
+      debugger:
+        name: J-Link Server
+        protocol: swd
+        clock: 4000000
+        start-pname: M55_HP
+  build-types:
+  - type: Debug
+    debug: on
+    optimize: speed
+  projects:
+  - project: ./translator.cproject.yml

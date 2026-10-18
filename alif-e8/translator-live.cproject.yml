@@ -1,0 +1,61 @@
+project:
+  packs:
+  - pack: PyTorch::ExecuTorch@1.5.1
+  - pack: ARM::CMSIS
+  add-path:
+  - /Users/npow/.cache/arm/packs/ARM/ethos-u-core-driver/1.26.5/ethos_u_core_driver/include
+  - ./translation/multi_npu
+  define:
+  - ETHOSU_ARCH: u85
+  misc:
+  - CPP:
+    - -std=gnu++17
+    - -Wno-deprecated-declarations
+  - for-compiler: GCC
+    C:
+    - -Wno-psabi
+    CPP:
+    - -Wno-psabi
+    Link:
+    - -Wl,-u,_printf_float
+  groups:
+  - group: Live Camera Translator
+    files:
+    - file: ./src/trace.c
+    - file: ./translation/live/main.cpp
+    - file: ./translation/live/live.cpp
+    - file: ./translation/live/runner.cpp
+    - file: ./translation/live/external_memory.cpp
+    - file: ./translation/live/asset_transfer.cpp
+    - file: ./translation/live/integrity.cpp
+    - file: ./translation/live/benchmark_service.cpp
+    - file: ./translation/multi_npu/multi_runtime.cpp
+    - file: ./translation/multi_npu/boot_he.cpp
+    - file: ./translation/multi_npu/worker_mailbox.cpp
+    - file: ./translation/staging/live_engine.cpp
+    - file: ./translation/staging/manual_service.cpp
+    - file: ./translation/staging/pipeline.cpp
+    - file: ./translation/ocr_pipeline/application.cpp
+    - file: ./translation/ocr_pipeline/postprocess.cpp
+    - file: ./translation/ocr_pipeline/characters.cpp
+    - file: ./translation/ocr_pipeline/common_signs.cpp
+    - file: ./artifacts/translator/mixed-driver/libe8_ethosu_mixed.a
+    - file: ./translation/camera.cpp
+    - file: ./translation/camera_preprocess.cpp
+    - file: ./translation/display.cpp
+    - file: ./translation/display_board.cpp
+    - file: ./translation/frontend/frontend.cpp
+  layers:
+  - layer: $Board-Layer$
+    type: Board
+  - layer: $AI-Layer$
+    type: AI
+  output:
+    type:
+    - elf
+    - hex
+    - map
+  components:
+  - component: Device:SOC Peripherals:OSPI
+  - component: BSP:OSPI PSRAM XIP
+  - component: BSP:OSPI PSRAM XIP:APS PSRAM

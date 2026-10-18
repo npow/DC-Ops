@@ -1,0 +1,1350 @@
+{
+  "checkpoint_revision": "691fd47381a57d0de256a0e0b201bd83d1f48ba0",
+  "checkpoint_manifest_sha256": "5e6a5af98e5c1185a68d243638bcd10a031a03c2b592e5b5d329eb4f15000ec9",
+  "target_spm_sha256": "a8aac80a036107c9c0b1e670f24045d869e39cec21c15936c4670d30676810d6",
+  "samples_sha256": "56de607ea230ba972fcbe02adaf10a01dc8c097db32b4a61cb9d0b5d7e9888e0",
+  "evaluation_inputs_sha256": "4ea4ec2e8d2040b7c3e59f219db55127e6c2886e0b85cdaca7c876df78a803e5",
+  "selection_policy": "Descending target SentencePiece unigram score, original token-ID tie break; all single Unicode character pieces (after optional leading boundary marker) and valid special IDs mandatory. Selection occurs before evaluation; no evaluation-derived tokens.",
+  "character_piece_count": 170,
+  "mandatory_count": 173,
+  "missing_target_pieces": [],
+  "invalid_special_ids_ignored": [
+    32001
+  ],
+  "original_parameters": 17270016,
+  "original_head_rows": 32001,
+  "checkpoint_files_verified": 9,
+  "full_precision_baseline": [
+    {
+      "input": "Welcome",
+      "text": "Bienvenidos",
+      "tokens": [
+        19307,
+        0
+      ],
+      "finished": true
+    },
+    {
+      "input": "Do not enter",
+      "text": "No entrar",
+      "tokens": [
+        150,
+        3772,
+        0
+      ],
+      "finished": true
+    },
+    {
+      "input": "Please close the door",
+      "text": "Por favor, cierre la puerta",
+      "tokens": [
+        242,
+        1145,
+        2,
+        5082,
+        8,
+        2696,
+        0
+      ],
+      "finished": true
+    },
+    {
+      "input": "The store is open",
+      "text": "La tienda está abierta",
+      "tokens": [
+        60,
+        3392,
+        103,
+        5250,
+        0
+      ],
+      "finished": true
+    },
+    {
+      "input": "Where is the train station?",
+      "text": "¿Dónde está la estación de tren?",
+      "tokens": [
+        107,
+        8761,
+        103,
+        8,
+        3132,
+        3,
+        3644,
+        63,
+        0
+      ],
+      "finished": true
+    },
+    {
+      "input": "Caution hot surface",
+      "text": "Cantidad de temperatura ambiente",
+      "tokens": [
+        22627,
+        3,
+        1821,
+        1573,
+        0
+      ],
+      "finished": true
+    },
+    {
+      "input": "Press the green button",
+      "text": "Presione el botón verde",
+      "tokens": [
+        1864,
+        3117,
+        78,
+        14,
+        4543,
+        5416,
+        0
+      ],
+      "finished": true
+    },
+    {
+      "input": "This machine is out of order",
+      "text": "Esta máquina está fuera de servicio",
+      "tokens": [
+        430,
+        3203,
+        103,
+        880,
+        3,
+        547,
+        0
+      ],
+      "finished": true
+    },
+    {
+      "input": "T",
+      "text": "T",
+      "tokens": [
+        345,
+        0
+      ],
+      "finished": true
+    },
+    {
+      "input": "Hello",
+      "text": "Hola",
+      "tokens": [
+        19017,
+        0
+      ],
+      "finished": true
+    },
+    {
+      "input": "STOP",
+      "text": "ESTNDAR",
+      "tokens": [
+        17,
+        9579,
+        1,
+        16705,
+        4041,
+        0
+      ],
+      "finished": true
+    }
+  ],
+  "shortlists": {
+    "2048": {
+      "selection_sha256": "932e67ecbe154a5403031c5de281fe6dddbacfda474e84e65d670b748f5fd191",
+      "selected_rows": 2048,
+      "int8_head_weight_bytes": 524288,
+      "head_weight_reduction_fraction": 0.936001999937502,
+      "denominator": 8,
+      "exact_token_matches": 0,
+      "exact_text_matches": 0,
+      "finished": 8,
+      "longer_outputs": 7,
+      "diagnostic_denominator": 3,
+      "results": [
+        {
+          "input": "Welcome",
+          "diagnostic": false,
+          "baseline": {
+            "text": "Bienvenidos",
+            "tokens": [
+              19307,
+              0
+            ],
+            "finished": true
+          },
+          "shortlist": {
+            "text": "La verdad es que",
+            "tokens": [
+              60,
+              1651,
+              35,
+              15,
+              0
+            ],
+            "finished": true
+          },
+          "exact_tokens": false,
+          "exact_text": false,
+          "token_length": 5,
+          "baseline_token_length": 2,
+          "extra_tokens": 3,
+          "baseline_tokens_not_selected": [
+            19307
+          ]
+        },
+        {
+          "input": "Do not enter",
+          "diagnostic": false,
+          "baseline": {
+            "text": "No entrar",
+            "tokens": [
+              150,
+              3772,
+              0
+            ],
+            "finished": true
+          },
+          "shortlist": {
+            "text": "No entres",
+            "tokens": [
+              150,
+              135,
+              5,
+              0
+            ],
+            "finished": true
+          },
+          "exact_tokens": false,
+          "exact_text": false,
+          "token_length": 4,
+          "baseline_token_length": 3,
+          "extra_tokens": 1,
+          "baseline_tokens_not_selected": [
+            3772
+          ]
+        },
+        {
+          "input": "Please close the door",
+          "diagnostic": false,
+          "baseline": {
+            "text": "Por favor, cierre la puerta",
+            "tokens": [
+              242,
+              1145,
+              2,
+              5082,
+              8,
+              2696,
+              0
+            ],
+            "finished": true
+          },
+          "shortlist": {
+            "text": "Por favor, erre la entrada",
+            "tokens": [
+              242,
+              1145,
+              2,
+              17,
+              102,
+              112,
+              8,
+              1749,
+              0
+            ],
+            "finished": true
+          },
+          "exact_tokens": false,
+          "exact_text": false,
+          "token_length": 9,
+          "baseline_token_length": 7,
+          "extra_tokens": 2,
+          "baseline_tokens_not_selected": [
+            2696,
+            5082
+          ]
+        },
+        {
+          "input": "The store is open",
+          "diagnostic": false,
+          "baseline": {
+            "text": "La tienda está abierta",
+            "tokens": [
+              60,
+              3392,
+              103,
+              5250,
+              0
+            ],
+            "finished": true
+          },
+          "shortlist": {
+            "text": "La reserva está en el",
+            "tokens": [
+              60,
+              1631,
+              103,
+              10,
+              14,
+              0
+            ],
+            "finished": true
+          },
+          "exact_tokens": false,
+          "exact_text": false,
+          "token_length": 6,
+          "baseline_token_length": 5,
+          "extra_tokens": 1,
+          "baseline_tokens_not_selected": [
+            3392,
+            5250
+          ]
+        },
+        {
+          "input": "Where is the train station?",
+          "diagnostic": false,
+          "baseline": {
+            "text": "¿Dónde está la estación de tren?",
+            "tokens": [
+              107,
+              8761,
+              103,
+              8,
+              3132,
+              3,
+              3644,
+              63,
+              0
+            ],
+            "finished": true
+          },
+          "shortlist": {
+            "text": "¿A donde se encuentra la ciudad de un l'Agn?",
+            "tokens": [
+              107,
+              160,
+              303,
+              24,
+              895,
+              8,
+              549,
+              3,
+              19,
+              3668,
+              59,
+              160,
+              223,
+              40,
+              63,
+              0
+            ],
+            "finished": true
+          },
+          "exact_tokens": false,
+          "exact_text": false,
+          "token_length": 16,
+          "baseline_token_length": 9,
+          "extra_tokens": 7,
+          "baseline_tokens_not_selected": [
+            3132,
+            3644,
+            8761
+          ]
+        },
+        {
+          "input": "Caution hot surface",
+          "diagnostic": false,
+          "baseline": {
+            "text": "Cantidad de temperatura ambiente",
+            "tokens": [
+              22627,
+              3,
+              1821,
+              1573,
+              0
+            ],
+            "finished": true
+          },
+          "shortlist": {
+            "text": "Preciación de la superficie",
+            "tokens": [
+              1864,
+              637,
+              458,
+              3,
+              8,
+              1741,
+              0
+            ],
+            "finished": true
+          },
+          "exact_tokens": false,
+          "exact_text": false,
+          "token_length": 7,
+          "baseline_token_length": 5,
+          "extra_tokens": 2,
+          "baseline_tokens_not_selected": [
+            22627
+          ]
+        },
+        {
+          "input": "Press the green button",
+          "diagnostic": false,
+          "baseline": {
+            "text": "Presione el botón verde",
+            "tokens": [
+              1864,
+              3117,
+              78,
+              14,
+              4543,
+              5416,
+              0
+            ],
+            "finished": true
+          },
+          "shortlist": {
+            "text": "Prege el vago",
+            "tokens": [
+              1864,
+              670,
+              14,
+              750,
+              624,
+              0
+            ],
+            "finished": true
+          },
+          "exact_tokens": false,
+          "exact_text": false,
+          "token_length": 6,
+          "baseline_token_length": 7,
+          "extra_tokens": -1,
+          "baseline_tokens_not_selected": [
+            3117,
+            4543,
+            5416
+          ]
+        },
+        {
+          "input": "This machine is out of order",
+          "diagnostic": false,
+          "baseline": {
+            "text": "Esta máquina está fuera de servicio",
+            "tokens": [
+              430,
+              3203,
+              103,
+              880,
+              3,
+              547,
+              0
+            ],
+            "finished": true
+          },
+          "shortlist": {
+            "text": "Esta meraría fuera de orden",
+            "tokens": [
+              430,
+              133,
+              291,
+              885,
+              880,
+              3,
+              1676,
+              0
+            ],
+            "finished": true
+          },
+          "exact_tokens": false,
+          "exact_text": false,
+          "token_length": 8,
+          "baseline_token_length": 7,
+          "extra_tokens": 1,
+          "baseline_tokens_not_selected": [
+            3203
+          ]
+        },
+        {
+          "input": "T",
+          "diagnostic": true,
+          "baseline": {
+            "text": "T",
+            "tokens": [
+              345,
+              0
+            ],
+            "finished": true
+          },
+          "shortlist": {
+            "text": "T",
+            "tokens": [
+              345,
+              0
+            ],
+            "finished": true
+          },
+          "exact_tokens": true,
+          "exact_text": true,
+          "token_length": 2,
+          "baseline_token_length": 2,
+          "extra_tokens": 0,
+          "baseline_tokens_not_selected": []
+        },
+        {
+          "input": "Hello",
+          "diagnostic": true,
+          "baseline": {
+            "text": "Hola",
+            "tokens": [
+              19017,
+              0
+            ],
+            "finished": true
+          },
+          "shortlist": {
+            "text": "- Qué hacer",
+            "tokens": [
+              61,
+              17,
+              1,
+              1103,
+              162,
+              0
+            ],
+            "finished": true
+          },
+          "exact_tokens": false,
+          "exact_text": false,
+          "token_length": 6,
+          "baseline_token_length": 2,
+          "extra_tokens": 4,
+          "baseline_tokens_not_selected": [
+            19017
+          ]
+        },
+        {
+          "input": "STOP",
+          "diagnostic": true,
+          "baseline": {
+            "text": "ESTNDAR",
+            "tokens": [
+              17,
+              9579,
+              1,
+              16705,
+              4041,
+              0
+            ],
+            "finished": true
+          },
+          "shortlist": {
+            "text": "XIZ",
+            "tokens": [
+              17,
+              1,
+              813,
+              314,
+              1487,
+              0
+            ],
+            "finished": true
+          },
+          "exact_tokens": false,
+          "exact_text": false,
+          "token_length": 6,
+          "baseline_token_length": 6,
+          "extra_tokens": 0,
+          "baseline_tokens_not_selected": [
+            4041,
+            9579,
+            16705
+          ]
+        }
+      ]
+    },
+    "4096": {
+      "selection_sha256": "c65875b5912b4f18807c7cc947ee1f768588e6b45a3d0504f4a8efd3978d89ff",
+      "selected_rows": 4096,
+      "int8_head_weight_bytes": 1048576,
+      "head_weight_reduction_fraction": 0.8720039998750039,
+      "denominator": 8,
+      "exact_token_matches": 2,
+      "exact_text_matches": 2,
+      "finished": 8,
+      "longer_outputs": 5,
+      "diagnostic_denominator": 3,
+      "results": [
+        {
+          "input": "Welcome",
+          "diagnostic": false,
+          "baseline": {
+            "text": "Bienvenidos",
+            "tokens": [
+              19307,
+              0
+            ],
+            "finished": true
+          },
+          "shortlist": {
+            "text": "La verdad es que",
+            "tokens": [
+              60,
+              1651,
+              35,
+              15,
+              0
+            ],
+            "finished": true
+          },
+          "exact_tokens": false,
+          "exact_text": false,
+          "token_length": 5,
+          "baseline_token_length": 2,
+          "extra_tokens": 3,
+          "baseline_tokens_not_selected": [
+            19307
+          ]
+        },
+        {
+          "input": "Do not enter",
+          "diagnostic": false,
+          "baseline": {
+            "text": "No entrar",
+            "tokens": [
+              150,
+              3772,
+              0
+            ],
+            "finished": true
+          },
+          "shortlist": {
+            "text": "No entrar",
+            "tokens": [
+              150,
+              3772,
+              0
+            ],
+            "finished": true
+          },
+          "exact_tokens": true,
+          "exact_text": true,
+          "token_length": 3,
+          "baseline_token_length": 3,
+          "extra_tokens": 0,
+          "baseline_tokens_not_selected": []
+        },
+        {
+          "input": "Please close the door",
+          "diagnostic": false,
+          "baseline": {
+            "text": "Por favor, cierre la puerta",
+            "tokens": [
+              242,
+              1145,
+              2,
+              5082,
+              8,
+              2696,
+              0
+            ],
+            "finished": true
+          },
+          "shortlist": {
+            "text": "Por favor, cerque la puerta",
+            "tokens": [
+              242,
+              1145,
+              2,
+              17,
+              2276,
+              454,
+              8,
+              2696,
+              0
+            ],
+            "finished": true
+          },
+          "exact_tokens": false,
+          "exact_text": false,
+          "token_length": 9,
+          "baseline_token_length": 7,
+          "extra_tokens": 2,
+          "baseline_tokens_not_selected": [
+            5082
+          ]
+        },
+        {
+          "input": "The store is open",
+          "diagnostic": false,
+          "baseline": {
+            "text": "La tienda está abierta",
+            "tokens": [
+              60,
+              3392,
+              103,
+              5250,
+              0
+            ],
+            "finished": true
+          },
+          "shortlist": {
+            "text": "La tienda está abierto",
+            "tokens": [
+              60,
+              3392,
+              103,
+              3765,
+              0
+            ],
+            "finished": true
+          },
+          "exact_tokens": false,
+          "exact_text": false,
+          "token_length": 5,
+          "baseline_token_length": 5,
+          "extra_tokens": 0,
+          "baseline_tokens_not_selected": [
+            5250
+          ]
+        },
+        {
+          "input": "Where is the train station?",
+          "diagnostic": false,
+          "baseline": {
+            "text": "¿Dónde está la estación de tren?",
+            "tokens": [
+              107,
+              8761,
+              103,
+              8,
+              3132,
+              3,
+              3644,
+              63,
+              0
+            ],
+            "finished": true
+          },
+          "shortlist": {
+            "text": "¿A dónde se encuentra la estación de tren?",
+            "tokens": [
+              107,
+              160,
+              4008,
+              24,
+              895,
+              8,
+              3132,
+              3,
+              3644,
+              63,
+              0
+            ],
+            "finished": true
+          },
+          "exact_tokens": false,
+          "exact_text": false,
+          "token_length": 11,
+          "baseline_token_length": 9,
+          "extra_tokens": 2,
+          "baseline_tokens_not_selected": [
+            8761
+          ]
+        },
+        {
+          "input": "Caution hot surface",
+          "diagnostic": false,
+          "baseline": {
+            "text": "Cantidad de temperatura ambiente",
+            "tokens": [
+              22627,
+              3,
+              1821,
+              1573,
+              0
+            ],
+            "finished": true
+          },
+          "shortlist": {
+            "text": "Presión de superficie en calor",
+            "tokens": [
+              1864,
+              2846,
+              3,
+              1741,
+              10,
+              2961,
+              0
+            ],
+            "finished": true
+          },
+          "exact_tokens": false,
+          "exact_text": false,
+          "token_length": 7,
+          "baseline_token_length": 5,
+          "extra_tokens": 2,
+          "baseline_tokens_not_selected": [
+            22627
+          ]
+        },
+        {
+          "input": "Press the green button",
+          "diagnostic": false,
+          "baseline": {
+            "text": "Presione el botón verde",
+            "tokens": [
+              1864,
+              3117,
+              78,
+              14,
+              4543,
+              5416,
+              0
+            ],
+            "finished": true
+          },
+          "shortlist": {
+            "text": "Presione el negr",
+            "tokens": [
+              1864,
+              3117,
+              78,
+              14,
+              3631,
+              223,
+              62,
+              0
+            ],
+            "finished": true
+          },
+          "exact_tokens": false,
+          "exact_text": false,
+          "token_length": 8,
+          "baseline_token_length": 7,
+          "extra_tokens": 1,
+          "baseline_tokens_not_selected": [
+            4543,
+            5416
+          ]
+        },
+        {
+          "input": "This machine is out of order",
+          "diagnostic": false,
+          "baseline": {
+            "text": "Esta máquina está fuera de servicio",
+            "tokens": [
+              430,
+              3203,
+              103,
+              880,
+              3,
+              547,
+              0
+            ],
+            "finished": true
+          },
+          "shortlist": {
+            "text": "Esta máquina está fuera de servicio",
+            "tokens": [
+              430,
+              3203,
+              103,
+              880,
+              3,
+              547,
+              0
+            ],
+            "finished": true
+          },
+          "exact_tokens": true,
+          "exact_text": true,
+          "token_length": 7,
+          "baseline_token_length": 7,
+          "extra_tokens": 0,
+          "baseline_tokens_not_selected": []
+        },
+        {
+          "input": "T",
+          "diagnostic": true,
+          "baseline": {
+            "text": "T",
+            "tokens": [
+              345,
+              0
+            ],
+            "finished": true
+          },
+          "shortlist": {
+            "text": "T",
+            "tokens": [
+              345,
+              0
+            ],
+            "finished": true
+          },
+          "exact_tokens": true,
+          "exact_text": true,
+          "token_length": 2,
+          "baseline_token_length": 2,
+          "extra_tokens": 0,
+          "baseline_tokens_not_selected": []
+        },
+        {
+          "input": "Hello",
+          "diagnostic": true,
+          "baseline": {
+            "text": "Hola",
+            "tokens": [
+              19017,
+              0
+            ],
+            "finished": true
+          },
+          "shortlist": {
+            "text": "- Qué hacer",
+            "tokens": [
+              61,
+              17,
+              1,
+              1103,
+              162,
+              0
+            ],
+            "finished": true
+          },
+          "exact_tokens": false,
+          "exact_text": false,
+          "token_length": 6,
+          "baseline_token_length": 2,
+          "extra_tokens": 4,
+          "baseline_tokens_not_selected": [
+            19017
+          ]
+        },
+        {
+          "input": "STOP",
+          "diagnostic": true,
+          "baseline": {
+            "text": "ESTNDAR",
+            "tokens": [
+              17,
+              9579,
+              1,
+              16705,
+              4041,
+              0
+            ],
+            "finished": true
+          },
+          "shortlist": {
+            "text": "XIZ",
+            "tokens": [
+              17,
+              1,
+              813,
+              314,
+              1487,
+              0
+            ],
+            "finished": true
+          },
+          "exact_tokens": false,
+          "exact_text": false,
+          "token_length": 6,
+          "baseline_token_length": 6,
+          "extra_tokens": 0,
+          "baseline_tokens_not_selected": [
+            9579,
+            16705
+          ]
+        }
+      ]
+    },
+    "8192": {
+      "selection_sha256": "b9c23aa5e9d2deac935e6fabb1350fa941c19747c3c42f48036ea537012c3e4b",
+      "selected_rows": 8192,
+      "int8_head_weight_bytes": 2097152,
+      "head_weight_reduction_fraction": 0.7440079997500078,
+      "denominator": 8,
+      "exact_token_matches": 5,
+      "exact_text_matches": 5,
+      "finished": 8,
+      "longer_outputs": 2,
+      "diagnostic_denominator": 3,
+      "results": [
+        {
+          "input": "Welcome",
+          "diagnostic": false,
+          "baseline": {
+            "text": "Bienvenidos",
+            "tokens": [
+              19307,
+              0
+            ],
+            "finished": true
+          },
+          "shortlist": {
+            "text": "Welcome",
+            "tokens": [
+              6489,
+              0
+            ],
+            "finished": true
+          },
+          "exact_tokens": false,
+          "exact_text": false,
+          "token_length": 2,
+          "baseline_token_length": 2,
+          "extra_tokens": 0,
+          "baseline_tokens_not_selected": [
+            19307
+          ]
+        },
+        {
+          "input": "Do not enter",
+          "diagnostic": false,
+          "baseline": {
+            "text": "No entrar",
+            "tokens": [
+              150,
+              3772,
+              0
+            ],
+            "finished": true
+          },
+          "shortlist": {
+            "text": "No entrar",
+            "tokens": [
+              150,
+              3772,
+              0
+            ],
+            "finished": true
+          },
+          "exact_tokens": true,
+          "exact_text": true,
+          "token_length": 3,
+          "baseline_token_length": 3,
+          "extra_tokens": 0,
+          "baseline_tokens_not_selected": []
+        },
+        {
+          "input": "Please close the door",
+          "diagnostic": false,
+          "baseline": {
+            "text": "Por favor, cierre la puerta",
+            "tokens": [
+              242,
+              1145,
+              2,
+              5082,
+              8,
+              2696,
+              0
+            ],
+            "finished": true
+          },
+          "shortlist": {
+            "text": "Por favor, cierre la puerta",
+            "tokens": [
+              242,
+              1145,
+              2,
+              5082,
+              8,
+              2696,
+              0
+            ],
+            "finished": true
+          },
+          "exact_tokens": true,
+          "exact_text": true,
+          "token_length": 7,
+          "baseline_token_length": 7,
+          "extra_tokens": 0,
+          "baseline_tokens_not_selected": []
+        },
+        {
+          "input": "The store is open",
+          "diagnostic": false,
+          "baseline": {
+            "text": "La tienda está abierta",
+            "tokens": [
+              60,
+              3392,
+              103,
+              5250,
+              0
+            ],
+            "finished": true
+          },
+          "shortlist": {
+            "text": "La tienda está abierta",
+            "tokens": [
+              60,
+              3392,
+              103,
+              5250,
+              0
+            ],
+            "finished": true
+          },
+          "exact_tokens": true,
+          "exact_text": true,
+          "token_length": 5,
+          "baseline_token_length": 5,
+          "extra_tokens": 0,
+          "baseline_tokens_not_selected": []
+        },
+        {
+          "input": "Where is the train station?",
+          "diagnostic": false,
+          "baseline": {
+            "text": "¿Dónde está la estación de tren?",
+            "tokens": [
+              107,
+              8761,
+              103,
+              8,
+              3132,
+              3,
+              3644,
+              63,
+              0
+            ],
+            "finished": true
+          },
+          "shortlist": {
+            "text": "¿A dónde se encuentra la estación de tren?",
+            "tokens": [
+              107,
+              160,
+              4008,
+              24,
+              895,
+              8,
+              3132,
+              3,
+              3644,
+              63,
+              0
+            ],
+            "finished": true
+          },
+          "exact_tokens": false,
+          "exact_text": false,
+          "token_length": 11,
+          "baseline_token_length": 9,
+          "extra_tokens": 2,
+          "baseline_tokens_not_selected": [
+            8761
+          ]
+        },
+        {
+          "input": "Caution hot surface",
+          "diagnostic": false,
+          "baseline": {
+            "text": "Cantidad de temperatura ambiente",
+            "tokens": [
+              22627,
+              3,
+              1821,
+              1573,
+              0
+            ],
+            "finished": true
+          },
+          "shortlist": {
+            "text": "Presión de superficie caliente",
+            "tokens": [
+              1864,
+              2846,
+              3,
+              1741,
+              4171,
+              0
+            ],
+            "finished": true
+          },
+          "exact_tokens": false,
+          "exact_text": false,
+          "token_length": 6,
+          "baseline_token_length": 5,
+          "extra_tokens": 1,
+          "baseline_tokens_not_selected": [
+            22627
+          ]
+        },
+        {
+          "input": "Press the green button",
+          "diagnostic": false,
+          "baseline": {
+            "text": "Presione el botón verde",
+            "tokens": [
+              1864,
+              3117,
+              78,
+              14,
+              4543,
+              5416,
+              0
+            ],
+            "finished": true
+          },
+          "shortlist": {
+            "text": "Presione el botón verde",
+            "tokens": [
+              1864,
+              3117,
+              78,
+              14,
+              4543,
+              5416,
+              0
+            ],
+            "finished": true
+          },
+          "exact_tokens": true,
+          "exact_text": true,
+          "token_length": 7,
+          "baseline_token_length": 7,
+          "extra_tokens": 0,
+          "baseline_tokens_not_selected": []
+        },
+        {
+          "input": "This machine is out of order",
+          "diagnostic": false,
+          "baseline": {
+            "text": "Esta máquina está fuera de servicio",
+            "tokens": [
+              430,
+              3203,
+              103,
+              880,
+              3,
+              547,
+              0
+            ],
+            "finished": true
+          },
+          "shortlist": {
+            "text": "Esta máquina está fuera de servicio",
+            "tokens": [
+              430,
+              3203,
+              103,
+              880,
+              3,
+              547,
+              0
+            ],
+            "finished": true
+          },
+          "exact_tokens": true,
+          "exact_text": true,
+          "token_length": 7,
+          "baseline_token_length": 7,
+          "extra_tokens": 0,
+          "baseline_tokens_not_selected": []
+        },
+        {
+          "input": "T",
+          "diagnostic": true,
+          "baseline": {
+            "text": "T",
+            "tokens": [
+              345,
+              0
+            ],
+            "finished": true
+          },
+          "shortlist": {
+            "text": "T",
+            "tokens": [
+              345,
+              0
+            ],
+            "finished": true
+          },
+          "exact_tokens": true,
+          "exact_text": true,
+          "token_length": 2,
+          "baseline_token_length": 2,
+          "extra_tokens": 0,
+          "baseline_tokens_not_selected": []
+        },
+        {
+          "input": "Hello",
+          "diagnostic": true,
+          "baseline": {
+            "text": "Hola",
+            "tokens": [
+              19017,
+              0
+            ],
+            "finished": true
+          },
+          "shortlist": {
+            "text": "- Hola",
+            "tokens": [
+              61,
+              17,
+              1,
+              7731,
+              161,
+              0
+            ],
+            "finished": true
+          },
+          "exact_tokens": false,
+          "exact_text": false,
+          "token_length": 6,
+          "baseline_token_length": 2,
+          "extra_tokens": 4,
+          "baseline_tokens_not_selected": [
+            19017
+          ]
+        },
+        {
+          "input": "STOP",
+          "diagnostic": true,
+          "baseline": {
+            "text": "ESTNDAR",
+            "tokens": [
+              17,
+              9579,
+              1,
+              16705,
+              4041,
+              0
+            ],
+            "finished": true
+          },
+          "shortlist": {
+            "text": "XIZ",
+            "tokens": [
+              17,
+              1,
+              813,
+              314,
+              1487,
+              0
+            ],
+            "finished": true
+          },
+          "exact_tokens": false,
+          "exact_text": false,
+          "token_length": 6,
+          "baseline_token_length": 6,
+          "extra_tokens": 0,
+          "baseline_tokens_not_selected": [
+            9579,
+            16705
+          ]
+        }
+      ]
+    }
+  },
+  "limitations": "Restricted greedy output vocabulary changes predictions. Character availability does not guarantee spell-out behavior; longer outputs can hit the unchanged 31-token generation limit. Eight frozen examples are a smoke test, not a general quality benchmark. INT8 size estimates exclude PTE headers, command streams and compression."
+}

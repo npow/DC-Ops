@@ -1,0 +1,222 @@
+{
+  "denominator": 8,
+  "exact_matches": 8,
+  "finished": 8,
+  "results": [
+    {
+      "input": "Welcome",
+      "float": "Bienvenidos",
+      "staged_a16w8": "Bienvenidos",
+      "exact_match": true,
+      "float_tokens": [
+        19307,
+        0
+      ],
+      "staged_tokens": [
+        19307,
+        0
+      ],
+      "finished": true
+    },
+    {
+      "input": "Do not enter",
+      "float": "No entrar",
+      "staged_a16w8": "No entrar",
+      "exact_match": true,
+      "float_tokens": [
+        150,
+        3772,
+        0
+      ],
+      "staged_tokens": [
+        150,
+        3772,
+        0
+      ],
+      "finished": true
+    },
+    {
+      "input": "Please close the door",
+      "float": "Por favor, cierre la puerta",
+      "staged_a16w8": "Por favor, cierre la puerta",
+      "exact_match": true,
+      "float_tokens": [
+        242,
+        1145,
+        2,
+        5082,
+        8,
+        2696,
+        0
+      ],
+      "staged_tokens": [
+        242,
+        1145,
+        2,
+        5082,
+        8,
+        2696,
+        0
+      ],
+      "finished": true
+    },
+    {
+      "input": "The store is open",
+      "float": "La tienda est\u00e1 abierta",
+      "staged_a16w8": "La tienda est\u00e1 abierta",
+      "exact_match": true,
+      "float_tokens": [
+        60,
+        3392,
+        103,
+        5250,
+        0
+      ],
+      "staged_tokens": [
+        60,
+        3392,
+        103,
+        5250,
+        0
+      ],
+      "finished": true
+    },
+    {
+      "input": "Where is the train station?",
+      "float": "\u00bfD\u00f3nde est\u00e1 la estaci\u00f3n de tren?",
+      "staged_a16w8": "\u00bfD\u00f3nde est\u00e1 la estaci\u00f3n de tren?",
+      "exact_match": true,
+      "float_tokens": [
+        107,
+        8761,
+        103,
+        8,
+        3132,
+        3,
+        3644,
+        63,
+        0
+      ],
+      "staged_tokens": [
+        107,
+        8761,
+        103,
+        8,
+        3132,
+        3,
+        3644,
+        63,
+        0
+      ],
+      "finished": true
+    },
+    {
+      "input": "Caution hot surface",
+      "float": "Cantidad de temperatura ambiente",
+      "staged_a16w8": "Cantidad de temperatura ambiente",
+      "exact_match": true,
+      "float_tokens": [
+        22627,
+        3,
+        1821,
+        1573,
+        0
+      ],
+      "staged_tokens": [
+        22627,
+        3,
+        1821,
+        1573,
+        0
+      ],
+      "finished": true
+    },
+    {
+      "input": "Press the green button",
+      "float": "Presione el bot\u00f3n verde",
+      "staged_a16w8": "Presione el bot\u00f3n verde",
+      "exact_match": true,
+      "float_tokens": [
+        1864,
+        3117,
+        78,
+        14,
+        4543,
+        5416,
+        0
+      ],
+      "staged_tokens": [
+        1864,
+        3117,
+        78,
+        14,
+        4543,
+        5416,
+        0
+      ],
+      "finished": true
+    },
+    {
+      "input": "This machine is out of order",
+      "float": "Esta m\u00e1quina est\u00e1 fuera de servicio",
+      "staged_a16w8": "Esta m\u00e1quina est\u00e1 fuera de servicio",
+      "exact_match": true,
+      "float_tokens": [
+        430,
+        3203,
+        103,
+        880,
+        3,
+        547,
+        0
+      ],
+      "staged_tokens": [
+        430,
+        3203,
+        103,
+        880,
+        3,
+        547,
+        0
+      ],
+      "finished": true
+    }
+  ],
+  "samples_sha256": "56de607ea230ba972fcbe02adaf10a01dc8c097db32b4a61cb9d0b5d7e9888e0",
+  "vocabulary_ranges": [
+    [
+      0,
+      8000
+    ],
+    [
+      8000,
+      16000
+    ],
+    [
+      16000,
+      24000
+    ],
+    [
+      24000,
+      32001
+    ]
+  ],
+  "calibration_counts": {
+    "encoder_0": 24,
+    "encoder_1": 24,
+    "encoder_2": 24,
+    "encoder_3": 24,
+    "encoder_4": 24,
+    "encoder_5": 24,
+    "decoder_0": 90,
+    "decoder_1": 90,
+    "head_0": 90,
+    "head_1": 90,
+    "head_2": 90,
+    "head_3": 90
+  },
+  "spatial_ffn": true,
+  "head_policy": "Original four head PT2E/PTE artifacts reused byte-for-byte",
+  "checkpoint_revision": "691fd47381a57d0de256a0e0b201bd83d1f48ba0",
+  "checkpoint_manifest_sha256": "5e6a5af98e5c1185a68d243638bcd10a031a03c2b592e5b5d329eb4f15000ec9"
+}

@@ -1,0 +1,12 @@
+{
+  "sign_count": 60,
+  "normalization_cases": 10,
+  "unsupported_cases": 14,
+  "sanitizers": [
+    "address",
+    "undefined"
+  ],
+  "passed": true,
+  "binary": "common_signs_test",
+  "algorithm": "Exact normalized English phrase lookup; no fuzzy match and no neural translation in sign mode."
+}
