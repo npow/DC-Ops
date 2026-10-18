@@ -1,0 +1,51 @@
+initial mailbox [1094931512, 2, 0, 0, 0, 0, 0, 0]
+upload+verify vision.pte 0 / 11251152
+upload+verify vision.pte 1048576 / 11251152
+upload+verify vision.pte 2097152 / 11251152
+upload+verify vision.pte 3145728 / 11251152
+upload+verify vision.pte 4194304 / 11251152
+upload+verify vision.pte 5242880 / 11251152
+upload+verify vision.pte 6291456 / 11251152
+upload+verify vision.pte 7340032 / 11251152
+upload+verify vision.pte 8388608 / 11251152
+upload+verify vision.pte 9437184 / 11251152
+upload+verify vision.pte 10485760 / 11251152
+uploaded vision.pte {'bytes': 11251152, 'sha256': 'becaf458eeed9c9058e4f932d2e3711744e33da976f9acc5d44e2b5cbb356833', 'all_bytes_verified': True, 'cpu_crc32': 819853224, 'verification': 'per-block + full-file on-device CRC32 against source; source SHA256 recorded'}
+upload+verify head.pte 0 / 23492704
+upload+verify head.pte 1048576 / 23492704
+upload+verify head.pte 2097152 / 23492704
+upload+verify head.pte 3145728 / 23492704
+upload+verify head.pte 4194304 / 23492704
+upload+verify head.pte 5242880 / 23492704
+upload+verify head.pte 6291456 / 23492704
+upload+verify head.pte 7340032 / 23492704
+upload+verify head.pte 8388608 / 23492704
+upload+verify head.pte 9437184 / 23492704
+upload+verify head.pte 10485760 / 23492704
+upload+verify head.pte 11534336 / 23492704
+upload+verify head.pte 12582912 / 23492704
+upload+verify head.pte 13631488 / 23492704
+upload+verify head.pte 14680064 / 23492704
+upload+verify head.pte 15728640 / 23492704
+upload+verify head.pte 16777216 / 23492704
+upload+verify head.pte 17825792 / 23492704
+upload+verify head.pte 18874368 / 23492704
+upload+verify head.pte 19922944 / 23492704
+upload+verify head.pte 20971520 / 23492704
+upload+verify head.pte 22020096 / 23492704
+upload+verify head.pte 23068672 / 23492704
+uploaded head.pte {'bytes': 23492704, 'sha256': 'bf1a0e527fa52f297d3a2600a700324babee75a4ebde714bc0540eea124ca4eb', 'all_bytes_verified': True, 'cpu_crc32': 2137371030, 'verification': 'per-block + full-file on-device CRC32 against source; source SHA256 recorded'}
+upload+verify image.bin 0 / 3686400
+upload+verify image.bin 1048576 / 3686400
+upload+verify image.bin 2097152 / 3686400
+upload+verify image.bin 3145728 / 3686400
+uploaded image.bin {'bytes': 3686400, 'sha256': 'b88d4be710d568b136ec3688a6b1f54519a2af97843df14e513570d353ba0d9b', 'all_bytes_verified': True, 'cpu_crc32': 1023290662, 'verification': 'per-block + full-file on-device CRC32 against source; source SHA256 recorded'}
+state/error/run/phase (91, 33, 0, 1) total_ms [0, 0, 0, 0, 0, 0]
+runtime error method.cpp:602 Failed parsing tensor at index zu: 0x0
+Traceback (most recent call last):
+  File "/Users/npow/code/act-e8-benchmark/run_board.py", line 191, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/Users/npow/code/act-e8-benchmark/run_board.py", line 166, in main
+    raise RuntimeError(f'board error {status}')
+RuntimeError: board error (91, 33, 0, 1)

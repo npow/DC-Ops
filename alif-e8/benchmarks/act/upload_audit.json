@@ -1,0 +1,26 @@
+{
+  "vision.pte": {
+    "bytes": 11251152,
+    "sha256": "becaf458eeed9c9058e4f932d2e3711744e33da976f9acc5d44e2b5cbb356833",
+    "all_bytes_verified": true,
+    "cpu_crc32": 819853224,
+    "retained": true,
+    "verification": "full-file on-device CRC32 against source; source SHA256 recorded"
+  },
+  "head.pte": {
+    "bytes": 23492704,
+    "sha256": "bf1a0e527fa52f297d3a2600a700324babee75a4ebde714bc0540eea124ca4eb",
+    "all_bytes_verified": true,
+    "cpu_crc32": 2137371030,
+    "retained": true,
+    "verification": "full-file on-device CRC32 against source; source SHA256 recorded"
+  },
+  "image.bin": {
+    "bytes": 3686400,
+    "sha256": "b88d4be710d568b136ec3688a6b1f54519a2af97843df14e513570d353ba0d9b",
+    "all_bytes_verified": true,
+    "cpu_crc32": 1023290662,
+    "retained": true,
+    "verification": "full-file on-device CRC32 against source; source SHA256 recorded"
+  }
+}

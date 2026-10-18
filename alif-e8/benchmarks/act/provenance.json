@@ -1,0 +1,7 @@
+{
+  "components_source": "/Users/npow/code/qualcomm/benchmarks/pi05/lerobot/src/lerobot/policies/act/modeling_act.py",
+  "sha256": "83d954f79ccd3eaa6774dbea92524939c8ac08359bb355ba7cd37b8601e1e3af",
+  "upstream_repo": "https://github.com/huggingface/lerobot",
+  "upstream_revision": "146d8474932c8b566717eb2738ba459337ab71c4",
+  "upstream_path": "src/lerobot/policies/act/modeling_act.py"
+}

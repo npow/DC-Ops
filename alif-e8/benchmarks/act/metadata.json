@@ -1,0 +1,9 @@
+{
+  "repo": "ofcourseistillloveyou/pick_up_red_lid_ac_50",
+  "revision": "50ee1c5864abedec44f33d53d1c5377ee086a4bd",
+  "weights_sha256": "803e7854f447745d6fbef82b319c6e75524efe692d82260aa7f0b0240e4ff459",
+  "vision_parameters": 11166912,
+  "head_parameters": 23031430,
+  "scope": "Exact checkpoint inference architecture, two 480x640 image passes and 50x6 actions. Synthetic normalized inputs; latency smoke only, no task-quality claim.",
+  "input_sha256": "b88d4be710d568b136ec3688a6b1f54519a2af97843df14e513570d353ba0d9b"
+}

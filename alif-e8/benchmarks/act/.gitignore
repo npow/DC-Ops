@@ -1,0 +1,17 @@
+checkpoint/*.safetensors
+checkpoint/modeling_act.py
+*.pte
+*.pt2
+*.pt
+*.bin
+*_vela/
+*_commands.json
+pythonlibs/
+__pycache__/
+.venv/
+firmware/out/
+firmware/tmp/
+firmware/*.cbuild*.yml
+firmware/.cmsis/*.dbgconf*
+status.json
+firmware/RTE/

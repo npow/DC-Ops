@@ -1,0 +1,25 @@
+{
+  "scope": "Compiler estimates only, not device timing. Includes modeled memory behavior.",
+  "stages": {
+    "vision": {
+      "inference_time": 3.16708478,
+      "nn_macs": 11115571200.0,
+      "cycles_total": 1266833912.0,
+      "cycles_npu": 72569425.0,
+      "cycles_dram_access": 1266833912.0,
+      "dram_total_bytes": 533489808.0,
+      "dram_bandwidth": 0.30994415283203125,
+      "dram_memory_used": 20566.90625
+    },
+    "head": {
+      "inference_time": 2.9015587775,
+      "nn_macs": 12685132517.0,
+      "cycles_total": 1160623511.0,
+      "cycles_npu": 155901258.0,
+      "cycles_dram_access": 1143712016.0,
+      "dram_total_bytes": 574619427.0,
+      "dram_bandwidth": 0.30994415283203125,
+      "dram_memory_used": 30097.203125
+    }
+  }
+}

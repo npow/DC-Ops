@@ -1,0 +1,7 @@
+CPU could not be halted
+CPU could not be halted
+CPU could not be halted
+CPU could not be halted
+CPU could not be halted
+Failed to halt CPU.
+{"reset_exception": "Unspecified error.", "note": "Reset pin may drop debug; reconnect in a fresh process."}

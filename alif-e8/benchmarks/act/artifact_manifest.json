@@ -1,0 +1,26 @@
+{
+  "checkpoint/model.safetensors": {
+    "bytes": 206494928,
+    "sha256": "803e7854f447745d6fbef82b319c6e75524efe692d82260aa7f0b0240e4ff459"
+  },
+  "checkpoint/config.json": {
+    "bytes": 1706,
+    "sha256": "2d4a1351eb50c13726a5053b2ee291fe838ddc829de04e2b0a7875beb38cbe72"
+  },
+  "vision.pte": {
+    "bytes": 11251152,
+    "sha256": "becaf458eeed9c9058e4f932d2e3711744e33da976f9acc5d44e2b5cbb356833"
+  },
+  "head.pte": {
+    "bytes": 23492704,
+    "sha256": "bf1a0e527fa52f297d3a2600a700324babee75a4ebde714bc0540eea124ca4eb"
+  },
+  "image.bin": {
+    "bytes": 3686400,
+    "sha256": "b88d4be710d568b136ec3688a6b1f54519a2af97843df14e513570d353ba0d9b"
+  },
+  "firmware/out/cmsis-executorch/DevKit-E8/Debug/cmsis-executorch.elf": {
+    "bytes": 7562808,
+    "sha256": "f57c1bd5bb839dff7caec4163a26c15b501aaebcf35c8fab766f15980efef5ac"
+  }
+}

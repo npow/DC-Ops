@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "max_absolute_difference": 0.0,
+  "output_shape": [
+    1,
+    50,
+    6
+  ],
+  "scope": "One synthetic input pair; split deployment forward vs unchanged LeRobot ACT forward, same strictly loaded checkpoint and ResNet18 implementation."
+}

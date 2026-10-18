@@ -1,0 +1,9 @@
+# Versions used for this benchmark; use a Python3.12 environment.
+torch==2.14.0
+torchao==0.18.0
+executorch==1.5.1
+ethos-u-vela==5.1.0
+numpy==2.5.4
+PyYAML==6.0.3
+einops
+pylink-square

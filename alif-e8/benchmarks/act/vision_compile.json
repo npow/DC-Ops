@@ -1,0 +1,16 @@
+{
+  "name": "vision",
+  "pte_bytes": 11251152,
+  "ops": {
+    "<EdgeOpOverload: quantized_decomposed.quantize_per_tensor.default>: schema = quantized_decomposed::quantize_per_tensor(Tensor input, float scale, int zero_point, int quant_min, int quant_max, ScalarType dtype) -> Tensor": 1,
+    "executorch_call_delegate": 1,
+    "<built-in function getitem>": 1,
+    "<EdgeOpOverload: quantized_decomposed.dequantize_per_tensor.default>: schema = quantized_decomposed::dequantize_per_tensor(Tensor input, float scale, int zero_point, int quant_min, int quant_max, ScalarType dtype, *, ScalarType? out_dtype=None) -> Tensor": 1
+  },
+  "planned_buffer_sizes": [
+    [
+      0,
+      4608000
+    ]
+  ]
+}

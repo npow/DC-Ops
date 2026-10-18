@@ -1,0 +1,26 @@
+{
+  "restored": true,
+  "elf": "/Users/npow/code/DC-Ops/alif-e8/artifacts/translator/flashed_live.elf",
+  "start_script_returncode": 0,
+  "first": {
+    "live_status": 4,
+    "live_error": 0,
+    "live_frames": 8715,
+    "live_pipeline_state": 4,
+    "live_pipeline_error": 0,
+    "live_assets_ready": 1,
+    "translator_lcd_errors": 0,
+    "ocr_error": 0
+  },
+  "second": {
+    "live_status": 4,
+    "live_error": 0,
+    "live_frames": 8754,
+    "live_pipeline_state": 4,
+    "live_pipeline_error": 0,
+    "live_assets_ready": 1,
+    "translator_lcd_errors": 0,
+    "ocr_error": 0
+  },
+  "frames_advanced": true
+}

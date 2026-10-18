@@ -1,0 +1,39 @@
+project:
+  define:
+  # Alif's official ML kit requires modifiable normal-memory NPU transactions.
+  - NPU_MEM_ATTR_0: 0x20
+  - NPU_MEM_ATTR_1: 0x20
+  - NPU_MEM_ATTR_2: 0x24
+  - NPU_MEM_ATTR_3: 0x24
+  - ETHOSU_SEMAPHORE_WAIT_INFERENCE: 60000
+  packs:
+  - pack: PyTorch::ExecuTorch@1.5.1
+  - pack: ARM::CMSIS
+  misc:
+  - CPP:
+    - -std=gnu++17
+    - -Wno-deprecated-declarations
+  - for-compiler: GCC
+    C:
+    - -Wno-psabi
+    CPP:
+    - -Wno-psabi
+    Link:
+    - -Wl,-u,_printf_float
+    - -Wl,--wrap=ospi_send_polling
+  groups:
+  - group: App
+    files:
+    - file: ./src/app_main.cpp
+    - file: ./src/arm_embedded_module.cpp
+    - file: ./src/arm_embedded_module.hpp
+  layers:
+  - layer: $Board-Layer$
+    type: Board
+  - layer: $AI-Layer$
+    type: AI
+  output:
+    type:
+    - elf
+    - hex
+    - map

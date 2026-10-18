@@ -1,0 +1,32 @@
+initial mailbox [1094931512, 2, 0, 0, 0, 0, 0, 0]
+retained vision.pte {'bytes': 11251152, 'sha256': 'becaf458eeed9c9058e4f932d2e3711744e33da976f9acc5d44e2b5cbb356833', 'all_bytes_verified': True, 'cpu_crc32': 819853224, 'retained': True, 'verification': 'full-file on-device CRC32 against source; source SHA256 recorded'}
+retained head.pte {'bytes': 23492704, 'sha256': 'bf1a0e527fa52f297d3a2600a700324babee75a4ebde714bc0540eea124ca4eb', 'all_bytes_verified': True, 'cpu_crc32': 2137371030, 'retained': True, 'verification': 'full-file on-device CRC32 against source; source SHA256 recorded'}
+retained image.bin {'bytes': 3686400, 'sha256': 'b88d4be710d568b136ec3688a6b1f54519a2af97843df14e513570d353ba0d9b', 'all_bytes_verified': True, 'cpu_crc32': 1023290662, 'retained': True, 'verification': 'full-file on-device CRC32 against source; source SHA256 recorded'}
+state/error/run/phase (4, 0, 0, 3) total_ms [0, 0, 0, 0, 0, 0]
+state/error/run/phase (4, 0, 0, 4) total_ms [0, 0, 0, 0, 0, 0]
+state/error/run/phase (4, 0, 0, 5) total_ms [0, 0, 0, 0, 0, 0]
+state/error/run/phase (4, 0, 1, 3) total_ms [20901, 0, 0, 0, 0, 0]
+state/error/run/phase (4, 0, 1, 4) total_ms [20901, 0, 0, 0, 0, 0]
+state/error/run/phase (4, 0, 1, 5) total_ms [20901, 0, 0, 0, 0, 0]
+state/error/run/phase (4, 0, 2, 3) total_ms [20901, 20900, 0, 0, 0, 0]
+state/error/run/phase (4, 0, 2, 4) total_ms [20901, 20900, 0, 0, 0, 0]
+state/error/run/phase (4, 0, 2, 5) total_ms [20901, 20900, 0, 0, 0, 0]
+state/error/run/phase (4, 0, 3, 3) total_ms [20901, 20900, 20901, 0, 0, 0]
+state/error/run/phase (4, 0, 3, 4) total_ms [20901, 20900, 20901, 0, 0, 0]
+state/error/run/phase (4, 0, 3, 5) total_ms [20901, 20900, 20901, 0, 0, 0]
+state/error/run/phase (4, 0, 4, 3) total_ms [20901, 20900, 20901, 20900, 0, 0]
+state/error/run/phase (4, 0, 4, 4) total_ms [20901, 20900, 20901, 20900, 0, 0]
+state/error/run/phase (4, 0, 4, 5) total_ms [20901, 20900, 20901, 20900, 0, 0]
+state/error/run/phase (4, 0, 5, 3) total_ms [20901, 20900, 20901, 20900, 20901, 0]
+state/error/run/phase (4, 0, 5, 4) total_ms [20901, 20900, 20901, 20900, 20901, 0]
+state/error/run/phase (4, 0, 5, 5) total_ms [20901, 20900, 20901, 20900, 20901, 0]
+Traceback (most recent call last):
+  File "/Users/npow/code/act-e8-benchmark/run_board.py", line 191, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/Users/npow/code/act-e8-benchmark/run_board.py", line 144, in main
+    words=link.memory_read32(mailbox,32)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/dcops-pylink/pylink/jlink.py", line 173, in wrapper
+    raise errors.JLinkException('Target is not connected.')
+pylink.errors.JLinkException: Target is not connected.

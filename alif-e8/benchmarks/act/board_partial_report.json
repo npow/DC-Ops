@@ -1,0 +1,77 @@
+{
+  "repo": "ofcourseistillloveyou/pick_up_red_lid_ac_50",
+  "revision": "50ee1c5864abedec44f33d53d1c5377ee086a4bd",
+  "weights_sha256": "803e7854f447745d6fbef82b319c6e75524efe692d82260aa7f0b0240e4ff459",
+  "vision_parameters": 11166912,
+  "head_parameters": 23031430,
+  "scope": "Exact checkpoint inference architecture, two 480x640 image passes and 50x6 actions. Synthetic normalized inputs; latency smoke only, no task-quality claim.",
+  "input_sha256": "b88d4be710d568b136ec3688a6b1f54519a2af97843df14e513570d353ba0d9b",
+  "status": "completed_predictions_usb_disconnected_before_final_readback",
+  "updated_utc": "2026-10-18T05:36:27.312747+00:00",
+  "board": "Alif E8 M55 HP + Ethos-U85-256",
+  "quantization": "INT8 weights and activations",
+  "completed_predictions": 5,
+  "warmup_runs": 1,
+  "measured_runs": 4,
+  "completed_total_ms": [
+    20901,
+    20900,
+    20901,
+    20900,
+    20901
+  ],
+  "measured_total_ms": [
+    20900,
+    20901,
+    20900,
+    20901
+  ],
+  "median_measured_ms": 20900.5,
+  "range_measured_ms": [
+    20900,
+    20901
+  ],
+  "all_completed_outputs_finite": true,
+  "final_action_values_captured": false,
+  "stage_timings_captured": false,
+  "psram_bus_hz": 25000000,
+  "psram_read_latency": "Fixed MR0bit5 both dies;8 XIPcycles;RXDSvariablelatencyoff",
+  "method_metadata": "Internal SRAM512KiB per model",
+  "external_axi": "One outstanding read/write;64-byte bursts",
+  "command_stream": "Original Vela commands copied into internal SRAM;no serialization or fragmentation",
+  "timing_scope": "Two480x640camera encoder passes+transformer+feature copies. Synthetic normalized float input reused for both cameras. Excludes capture/preprocessing,upload/load,and physical robot execution.",
+  "quality_scope": "One synthetic calibration/input; no policy-quality validation or board-vs-host numerical comparison.",
+  "timer_check": {
+    "host_elapsed_seconds": 2.0056300419964828,
+    "device_elapsed_ms": 2005,
+    "ratio": 0.9996858633031566
+  },
+  "transfer_audit": {
+    "vision.pte": {
+      "bytes": 11251152,
+      "sha256": "becaf458eeed9c9058e4f932d2e3711744e33da976f9acc5d44e2b5cbb356833",
+      "all_bytes_verified": true,
+      "cpu_crc32": 819853224,
+      "retained": true,
+      "verification": "full-file on-device CRC32 against source; source SHA256 recorded"
+    },
+    "head.pte": {
+      "bytes": 23492704,
+      "sha256": "bf1a0e527fa52f297d3a2600a700324babee75a4ebde714bc0540eea124ca4eb",
+      "all_bytes_verified": true,
+      "cpu_crc32": 2137371030,
+      "retained": true,
+      "verification": "full-file on-device CRC32 against source; source SHA256 recorded"
+    },
+    "image.bin": {
+      "bytes": 3686400,
+      "sha256": "b88d4be710d568b136ec3688a6b1f54519a2af97843df14e513570d353ba0d9b",
+      "all_bytes_verified": true,
+      "cpu_crc32": 1023290662,
+      "retained": true,
+      "verification": "full-file on-device CRC32 against source; source SHA256 recorded"
+    }
+  },
+  "evidence_log": "board_fixed_latency_allocator_corrected.log",
+  "evidence_log_sha256": "5cbab3b675604bb141b9b5fb8fbb370e372dc8544c63fe30001ab1d2e13ada0e"
+}

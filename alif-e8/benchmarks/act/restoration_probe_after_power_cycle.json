@@ -1,0 +1,9 @@
+{
+  "bytes": 65536,
+  "source_sha256": "63db8c4b4191ff1b3491a825cc5dd7e3a25a99a8defe083bdee8a18ea3de1967",
+  "readback_sha256": "63db8c4b4191ff1b3491a825cc5dd7e3a25a99a8defe083bdee8a18ea3de1967",
+  "mismatching_bytes": 0,
+  "service_error": 0,
+  "source_sram_verified": true,
+  "passed": true
+}
